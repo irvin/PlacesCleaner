@@ -1,0 +1,10 @@
+	<em:localized>
+	<Description>
+		<em:locale>zh-CN</em:locale>
+		<em:name>PlacesCleaner 收藏库清洁工</em:name>
+		<em:description>这是一个收藏库清理工，整理（Vacuum）并清理收藏库无用的浏览历史。</em:description>
+		<em:creator>Irvin Chen</em:creator>
+		<em:contributor>All contributors are listed in license.txt</em:contributor>
+		<em:translator>PLEASE ADD YOUR NAME HERE (zh-CN)</em:translator>
+	</Description>
+	</em:localized>   

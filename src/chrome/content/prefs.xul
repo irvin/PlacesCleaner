@@ -1,37 +1,36 @@
-<?xml version="1.0"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://PlacesCleaner/locale/PlacesCleaner.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
+<!DOCTYPE prefwindow SYSTEM "chrome://PlacesCleaner/locale/PlacesCleaner.dtd">
 
-<prefwindow id="PlacesCleanerPreferences" xmlns:html="http://www.w3.org/1999/xhtml" 
-	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"	title="&pref.title;">
+<prefwindow id="PlacesCleanerPreferences"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  title="&pref.title;">
 
-	<prefpane id="PlacesCleaner-prefpane">
-		<preferences>
-			<preference id="PlacesCleaner-viewtime-pref" name="extensions.PlacesCleaner.viewtime" type="int" />
-			<preference id="PlacesCleaner-dayinterval-pref" name="extensions.PlacesCleaner.dayinterval" type="int" />
-			<preference id="PlacesCleaner-autoclean-pref" name="extensions.PlacesCleaner.autoclean" type="bool" />
-			<preference id="PlacesCleaner-lastvacuumtime-pref" name="extensions.PlacesCleaner.lastvacuumtime" type="string" />
-		</preferences>
-		
-	    <script type="application/x-javascript" src="chrome://PlacesCleaner/content/prefs.js"/>
-		<script type="text/javascript">
-			window.onload = function() {
-				PrefWindow.enableDayInterval();
-			};
-		</script>
+  <prefpane id="PlacesCleaner-prefpane">
+    <preferences>
+      <preference id="PlacesCleaner-viewtime-pref" name="extensions.PlacesCleaner.viewtime" type="int" />
+      <preference id="PlacesCleaner-dayinterval-pref" name="extensions.PlacesCleaner.dayinterval" type="int" />
+      <preference id="PlacesCleaner-autoclean-pref" name="extensions.PlacesCleaner.autoclean" type="bool" />
+	  <preference id="PlacesCleaner-lastvacuumtime-pref" name="extensions.PlacesCleaner.lastvacuumtime" type="string" />
+    </preferences>
+    
+    <hbox align="center">
+      <label control="PlacesCleaner-viewtime" value="&pref.viewtime;"/>
+      <textbox id="PlacesCleaner-viewtime" width="30" preference="PlacesCleaner-viewtime-pref" />
+    </hbox>
+    
+    <checkbox id="PlacesCleaner-autoclean-check" label="&pref.EnableAutoclean;" preference="PlacesCleaner-autoclean-pref" oncommand="PrefWindow.enableDayInterval();"/>
+    <hbox align="center" class="indent">
+      <label id="PlacesCleaner-dayinterval-label" value="&pref.dayinterval;"/>
+      <textbox id="PlacesCleaner-dayinterval-box" width="30" preference="PlacesCleaner-dayinterval-pref" />
+    </hbox>
+  </prefpane>
 
-		<vbox>
-		    <label control="PlacesCleaner-viewtime" value="&pref.viewtime;"/>
-		    <textbox id="PlacesCleaner-viewtime" preference="PlacesCleaner-viewtime-pref" />
-	       	<checkbox id="PlacesCleaner-autoclean-check"  label="&pref.EnableAutoclean;" preference="PlacesCleaner-autoclean-pref" oncommand="PrefWindow.enableDayInterval();"/>
-	       	<hbox>
-				<label id="PlacesCleaner-dayinterval-label" value="&pref.dayinterval;"/>
-		       	<textbox id="PlacesCleaner-dayinterval-box" preference="PlacesCleaner-dayinterval-pref" />
-	       	</hbox>
-	    </vbox>
-	</prefpane>
- 
+  <script type="application/x-javascript" src="chrome://PlacesCleaner/content/prefs.js"/>
+  <script type="text/javascript">
+    window.onload = function() {
+    PrefWindow.enableDayInterval();
+    };
+  </script>
 </prefwindow>
-
-

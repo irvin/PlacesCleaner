@@ -24,8 +24,15 @@ The following license applies to all files:
  * * littlebtc
  * * The Icon edit-clear.png is coming from Tango project, belong to the public domain. http://tango-project.org/
  * * openOptions is adapted from NicoFox, used with explicit permission from the author, littlebtc.
- * * Clyde Wu on Menu item code 
- * * softcup help for l10n code 
- * * 
+ * * Clyde Wu, on Menu item code 
+ * * softcup, help for l10n code 
+ * * teo from BabelZilla, for option window adjustment. (090828)
+ * *
+ * 
+ * Translator(s): 
+ * *
+ * * Ghelman from BabelZilla (pt-BR)
+ * * xmoke from BabelZilla (zh-CN)
+ * *
  *
  * ***** END LICENSE BLOCK ***** */
