@@ -1,0 +1,6 @@
+<!ENTITY pref.title			"PlacesCleaner Preference">
+<!ENTITY pref.viewtime 		"Clean the records viewing time less than...">
+<!ENTITY pref.EnableAutoclean 	"Autoclean">
+<!ENTITY pref.dayinterval 	"Auto clean the records every n days...">
+<!ENTITY panel.cleannow 	"Clean Places now!">
+<!ENTITY panel.preference 	"Preference...">

@@ -1,0 +1,31 @@
+The following license applies to all files:
+
+/* ***** BEGIN LICENSE BLOCK *****
+ *
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ *
+ * The Original Code is the Vacuum Places extension version 0.1 
+ * (https://addons.mozilla.org/en-US/firefox/addon/13824).
+ *
+ * The Initial Developer of the Original Code is REVERTRON (http://www.revertron.com).
+ * Portion created by Initial Developer are Licensed under Mozilla Public License, version 1.1
+ *
+ * Contributor(s): 
+ * *
+ * * Irvin, irvinfly@gmail.com
+ * * littlebtc
+ * * The Icon edit-clear.png is coming from Tango project, belong to the public domain. http://tango-project.org/
+ * * openOptions is adapted from NicoFox, used with explicit permission from the author, littlebtc.
+ * * Clyde Wu on Menu item code 
+ * * softcup help for l10n code 
+ * * 
+ *
+ * ***** END LICENSE BLOCK ***** */

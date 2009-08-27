@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://PlacesCleaner/locale/PlacesCleaner.dtd">
+<overlay id="PlacesCleaner-overlay" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+	<!-- Menu Item code by Clyde Wu -->
+	<menupopup id="menu_ToolsPopup">
+		<menu id="menu_placescleaner" image="chrome://PlacesCleaner/content/edit-clear.png" label="PlacesCleaner" insertbefore="javascriptConsole" class="menu-iconic">
+		<menupopup>
+			<menuitem label="&panel.cleannow;" oncommand="PlacesCleaner.onClickStatusIcon();"/>
+			<menuitem label="&panel.preference;" oncommand="PlacesCleaner.openOptions();"/>
+		</menupopup>
+		</menu>
+	</menupopup>
+
+
+	<!-- Status Bar -->
+	<statusbar id="status-bar">	
+		<statusbarpanel id="PlacesCleaner-panel" context="PlacesCleaner-menu" role="button" 
+			onmouseup="if(event.button==0) PlacesCleaner.onClickStatusIcon();" >
+			<image src="chrome://PlacesCleaner/content/edit-clear.png" id="PlacesCleanerStatusIcon" style="cursor:pointer;" tooltiptext="&panel.cleannow;"/>
+			<label hidden="true" id="PlacesCleanerStatusText" value=""/>
+		</statusbarpanel>
+	</statusbar>
+
+	<popupset>
+		<menupopup id="PlacesCleaner-menu">
+			<menuitem label="&panel.cleannow;" oncommand="PlacesCleaner.onClickStatusIcon();"/>
+			<menuseparator/>
+			<menuitem label="&panel.preference;" oncommand="PlacesCleaner.openOptions();"/>
+		</menupopup>
+	</popupset>
+
+
+	<!-- load i18n string in js -->
+	<stringbundleset>
+		<stringbundle id="strRes" src="chrome://PlacesCleaner/locale/PlacesCleaner.properties"/>
+	</stringbundleset>	
+
+	<script type="application/x-javascript" src="chrome://PlacesCleaner/content/script.js" />
+
+</overlay>
