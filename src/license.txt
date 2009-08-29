@@ -33,6 +33,7 @@ The following license applies to all files:
  * *
  * * Ghelman from BabelZilla (pt-BR)
  * * xmoke from BabelZilla (zh-CN)
+ * * erglo from BabelZilla (de-DE)
  * *
  *
  * ***** END LICENSE BLOCK ***** */

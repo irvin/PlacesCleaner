@@ -1,0 +1,6 @@
+<!ENTITY pref.title "PlacesCleaner - Einstellungen">
+<!ENTITY pref.viewtime "Datensätze löschen die weniger als n-mal verwendet wurden...">
+<!ENTITY pref.EnableAutoclean "Automatisch bereinigen">
+<!ENTITY pref.dayinterval "Datensätze automatisch jeden n-ten Tag bereinigen...">
+<!ENTITY panel.cleannow "Places-Datenbank jetzt bereinigen!">
+<!ENTITY panel.preference "Einstellungen...">

@@ -4,3 +4,4 @@ locale 		PlacesCleaner 	en-US chrome/locale/en-US/
 locale 		PlacesCleaner 	zh-TW chrome/locale/zh-TW/
 locale 		PlacesCleaner 	zh-CN chrome/locale/zh-CN/
 locale 		PlacesCleaner 	pt-BR chrome/locale/pt-BR/
+locale 		PlacesCleaner 	de-DE chrome/locale/de-DE/
