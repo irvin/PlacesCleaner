@@ -9,28 +9,56 @@
 
   <prefpane id="PlacesCleaner-prefpane">
     <preferences>
-      <preference id="PlacesCleaner-viewtime-pref" name="extensions.PlacesCleaner.viewtime" type="int" />
-      <preference id="PlacesCleaner-dayinterval-pref" name="extensions.PlacesCleaner.dayinterval" type="int" />
-      <preference id="PlacesCleaner-autoclean-pref" name="extensions.PlacesCleaner.autoclean" type="bool" />
-	  <preference id="PlacesCleaner-lastvacuumtime-pref" name="extensions.PlacesCleaner.lastvacuumtime" type="string" />
+		<preference id="PlacesCleaner-autoclean-pref" name="extensions.PlacesCleaner.autoclean" type="bool" />
+		<preference id="PlacesCleaner-viewtime-pref" name="extensions.PlacesCleaner.viewtime" type="int" />
+		<preference id="PlacesCleaner-dayinterval-pref" name="extensions.PlacesCleaner.dayinterval" type="int" />
+		<preference id="PlacesCleaner-lastvacuumtime-pref" name="extensions.PlacesCleaner.lastvacuumtime" type="string" />
+		<preference id="PlacesCleaner-hidestatus-pref" name="extensions.PlacesCleaner.hidestatus" type="bool" />
+		<preference id="PlacesCleaner-onlyvacuum-pref" name="extensions.PlacesCleaner.onlyvacuum" type="bool" />
     </preferences>
     
-    <hbox align="center">
-      <label control="PlacesCleaner-viewtime" value="&pref.viewtime;"/>
-      <textbox id="PlacesCleaner-viewtime" width="30" preference="PlacesCleaner-viewtime-pref" />
-    </hbox>
-    
-    <checkbox id="PlacesCleaner-autoclean-check" label="&pref.EnableAutoclean;" preference="PlacesCleaner-autoclean-pref" oncommand="PrefWindow.enableDayInterval();"/>
-    <hbox align="center" class="indent">
-      <label id="PlacesCleaner-dayinterval-label" value="&pref.dayinterval;"/>
-      <textbox id="PlacesCleaner-dayinterval-box" width="30" preference="PlacesCleaner-dayinterval-pref" />
-    </hbox>
-  </prefpane>
+    <radiogroup id="PlacesCleaner-chkAuto" preference="PlacesCleaner-autoclean-pref">
+    <hbox>
+		<groupbox width="180">
+			<caption>
+			    <radio label="&pref.automaticclean;" oncommand="PrefWindow.setAutoClean();" value="true" />
+			</caption>
+			<hbox align="center">
+				<label value="&pref.every;" />
+				<textbox id="item-auto" width="30" preference="PlacesCleaner-dayinterval-pref" />
+				<label value="&pref.days;" />
+			</hbox>
+		</groupbox>
+		<groupbox width="180">
+			<caption>
+			    <radio label="&pref.manualclean;" oncommand="PrefWindow.setAutoClean();"  value="false" />
+			</caption>
+			<checkbox id="item-manual" label="&pref.hidestatus;" preference="PlacesCleaner-hidestatus-pref" oncommand="PrefWindow.setHideStatus();" />    
+			<hbox align="center">
+				<label value="&pref.for;"/>
+				<textbox id="item-manual2" width="30" preference="PlacesCleaner-dayinterval-pref" />
+				<label value="&pref.daysafter;" />
+			</hbox>
+			<separator class="thin"/>
+			<label value="&pref.needrestart;" />
+			<separator class="thin"/>
+		</groupbox>
+	</hbox>    
+    </radiogroup>		
 
+	<checkbox id="chk-vacuum" label="&pref.onlyvacuum;" preference="PlacesCleaner-onlyvacuum-pref"  oncommand="PrefWindow.setOnlyVacuum();"/>    
+	<hbox class="indent" align="center">
+		<label value="&pref.viewlessthan;" />
+   		<textbox id="PlacesCleaner-viewtime" width="30" preference="PlacesCleaner-viewtime-pref" />
+   		<label value="&pref.times;" />
+	</hbox>	
+	<separator class="thin"/>    
+  </prefpane>
+  
   <script type="application/x-javascript" src="chrome://PlacesCleaner/content/prefs.js"/>
   <script type="text/javascript">
-    window.onload = function() {
-    PrefWindow.enableDayInterval();
-    };
+	window.onload = function() {
+		PrefWindow.chkAutoClean();
+	};
   </script>
 </prefwindow>

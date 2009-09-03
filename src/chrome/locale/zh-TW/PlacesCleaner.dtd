@@ -1,6 +1,15 @@
-<!ENTITY pref.title 		"PlacesCleaner 設定">
-<!ENTITY pref.viewtime 		"清理瀏覽次數不超過幾次的記錄：">
-<!ENTITY pref.EnableAutoclean 	"自動清理">
-<!ENTITY pref.dayinterval 	"每幾天自動清理：">
 <!ENTITY panel.cleannow 	"立刻清理收藏庫！">
 <!ENTITY panel.preference 	"偏好設定...">
+
+<!ENTITY pref.title 		"PlacesCleaner 設定">
+<!ENTITY pref.automaticclean	"自動清理">
+<!ENTITY pref.manualclean	"手動清理">
+<!ENTITY pref.every			"每">
+<!ENTITY pref.days			"天">
+<!ENTITY pref.hidestatus	"隱藏狀況列圖示">
+<!ENTITY pref.for			"每次清除後隱藏">
+<!ENTITY pref.daysafter		"天">
+<!ENTITY pref.needrestart	"* 必須重啟動 Firefox">
+<!ENTITY pref.onlyvacuum	"只重整（不清除少用瀏覽歷史）">
+<!ENTITY pref.viewlessthan	"清除瀏覽次數少於">
+<!ENTITY pref.times			"次的歷史紀錄">
