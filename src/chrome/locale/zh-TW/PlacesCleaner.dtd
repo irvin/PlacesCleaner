@@ -9,7 +9,7 @@
 <!ENTITY pref.hidestatus	"隱藏狀況列圖示">
 <!ENTITY pref.for			"每次清除後隱藏">
 <!ENTITY pref.daysafter		"天">
-<!ENTITY pref.needrestart	"* 必須重啟動 Firefox">
+<!ENTITY pref.needrestart	"* 必須重新啟動 Firefox">
 <!ENTITY pref.onlyvacuum	"只重整（不清除少用瀏覽歷史）">
 <!ENTITY pref.viewlessthan	"清除瀏覽次數少於">
 <!ENTITY pref.times			"次的歷史紀錄">

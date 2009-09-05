@@ -1,6 +1,14 @@
-<!ENTITY pref.title "PlacesCleaner 选项">
-<!ENTITY pref.viewtime "清理访问次数少于多少次的记录...">
-<!ENTITY pref.EnableAutoclean "自动清理">
-<!ENTITY pref.dayinterval "自动清理间隔天数...">
 <!ENTITY panel.cleannow "立即清理!">
 <!ENTITY panel.preference "选项...">
+<!ENTITY pref.title "PlacesCleaner 选项">
+<!ENTITY pref.automaticclean "自动清理">
+<!ENTITY pref.manualclean "手动清理">
+<!ENTITY pref.every "每">
+<!ENTITY pref.days "天">
+<!ENTITY pref.hidestatus "隐藏状态栏图标">
+<!ENTITY pref.for "在清理后的">
+<!ENTITY pref.daysafter "天内">
+<!ENTITY pref.needrestart "* 需要重启 firefox">
+<!ENTITY pref.onlyvacuum "只压缩数据库不清理无用历史条目">
+<!ENTITY pref.viewlessthan "删除浏览次数少于">
+<!ENTITY pref.times "次的条目">

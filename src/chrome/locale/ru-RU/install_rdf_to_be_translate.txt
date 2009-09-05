@@ -1,0 +1,10 @@
+	<em:localized>
+	<Description>
+		<em:locale>ru-RU</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Расширение для очистки и уборки базы данных «Собранное» Firefox</em:description>
+		<em:creator>Ирвин Чен</em:creator>
+		<em:contributor>Все участники перечислены в файле license.txt</em:contributor>
+		<em:translator>Пирятинский Виталий (ru-RU)</em:translator>		
+	</Description>
+	</em:localized>

@@ -1,6 +1,14 @@
-<!ENTITY pref.title "Preferências do PlacesCleaner">
-<!ENTITY pref.viewtime "Limpar os tempos de visualização de registros menores que...">
-<!ENTITY pref.EnableAutoclean "Limpeza automática">
-<!ENTITY pref.dayinterval "Limpar automaticamente os registros a cada n dias...">
 <!ENTITY panel.cleannow "Limpar locais agora!">
 <!ENTITY panel.preference "Preferências...">
+<!ENTITY pref.title "Preferências do PlacesCleaner">
+<!ENTITY pref.automaticclean "Limpeza automática">
+<!ENTITY pref.manualclean "Limpeza manual">
+<!ENTITY pref.every "Cada">
+<!ENTITY pref.days "dias">
+<!ENTITY pref.hidestatus "Ocultar ícone da barra de status">
+<!ENTITY pref.for "Por">
+<!ENTITY pref.daysafter "dias após limpar">
+<!ENTITY pref.needrestart "* Precisa reiniciar o Firefox">
+<!ENTITY pref.onlyvacuum "Apenas otimizar; não limpar entradas de histórico sem uso">
+<!ENTITY pref.viewlessthan "apagar entradas vistas menos que">
+<!ENTITY pref.times "vezes">

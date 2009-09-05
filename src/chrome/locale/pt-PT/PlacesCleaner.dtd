@@ -1,0 +1,14 @@
+<!ENTITY panel.cleannow "Limpar places agora!">
+<!ENTITY panel.preference "Preferências...">
+<!ENTITY pref.title "Preferências do PlacesCleaner">
+<!ENTITY pref.automaticclean "Limpeza automática">
+<!ENTITY pref.manualclean "Limpeza manual">
+<!ENTITY pref.every "A cada">
+<!ENTITY pref.days "dias">
+<!ENTITY pref.hidestatus "Ocultar o ícone da barra de estado">
+<!ENTITY pref.for "Para">
+<!ENTITY pref.daysafter "dias após limpeza">
+<!ENTITY pref.needrestart "* Necessita reinício do firefox">
+<!ENTITY pref.onlyvacuum "Apenas aspirar, não limpar entradas do histórico">
+<!ENTITY pref.viewlessthan "eliminar entradas visionadas menos de">
+<!ENTITY pref.times "vezes">

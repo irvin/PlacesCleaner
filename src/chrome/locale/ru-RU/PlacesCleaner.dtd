@@ -1,0 +1,14 @@
+<!ENTITY panel.cleannow "Очистить «Собранное» немедля!">
+<!ENTITY panel.preference "Настройки…">
+<!ENTITY pref.title "PlacesCleaner — Настройки">
+<!ENTITY pref.automaticclean "Автоматическая очистка">
+<!ENTITY pref.manualclean "Ручная очистка">
+<!ENTITY pref.every "Каждые">
+<!ENTITY pref.days "дней(я)">
+<!ENTITY pref.hidestatus "Скрыть значок в строке состояния">
+<!ENTITY pref.for "на">
+<!ENTITY pref.daysafter "дней(я) после очистки">
+<!ENTITY pref.needrestart "* Необходим перезапуск Firefox">
+<!ENTITY pref.onlyvacuum "Только сжать, не очищая бесполезные элементы истории">
+<!ENTITY pref.viewlessthan "Удалить записи просмотренные менее чем">
+<!ENTITY pref.times "раз(а)">
