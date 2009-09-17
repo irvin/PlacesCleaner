@@ -22,18 +22,27 @@ The following license applies to all files:
  * *
  * * Irvin, irvinfly@gmail.com
  * * littlebtc
- * * The Icon edit-clear.png is coming from Tango project, belong to the public domain. http://tango-project.org/
+ * * The Icon edit-clear.png is coming from Tango project, belong to the public domain. 
+ * *     http://tango-project.org/
  * * openOptions is adapted from NicoFox, used with explicit permission from the author, littlebtc.
  * * Clyde Wu, on Menu item code 
  * * softcup, help for l10n code 
- * * teo from BabelZilla, for option window adjustment. (090828)
+ * * teo from BabelZilla, for preference window adjustment. (090828)
+ * * quirK from mozilla addons site, for preference window adjustment. (090915)
  * *
  * 
  * Translator(s): 
  * *
- * * Ghelman from BabelZilla (pt-BR)
- * * xmoke from BabelZilla (zh-CN)
- * * erglo from BabelZilla (de-DE)
+ * * erglo 		(de-DE)
+ * * lcw 		(de-DE)
+ * * myahoo 	(fr)
+ * * renegade06 (mk-MK)
+ * * teo 		(pl-PL)
+ * * Ghelman 	(pt-BR)
+ * * lloco 		(pt-PT)
+ * * PiVV 		(ru-RU)
+ * * Република Српска (sr-RS)
+ * * xmoke 		(zh-CN)
  * *
  *
  * ***** END LICENSE BLOCK ***** */

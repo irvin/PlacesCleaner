@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>PlacesCleaner@sto.tw</em:id>
-    <em:version>0.3</em:version>
+    <em:version>0.3.1</em:version>
     <em:type>2</em:type>
     <em:optionsURL>chrome://PlacesCleaner/content/prefs.xul</em:optionsURL>
     <em:iconURL>chrome://PlacesCleaner/content/edit-clear-32.png</em:iconURL>
@@ -61,7 +61,7 @@
 		<em:description>Eine Erweiterung zum Bereinigen und Aufräumen der Places-Datenbank von Firefox.</em:description>
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Alle Mitwirkenden werden in der Datei license.txt aufgelistet.</em:contributor>
-		<em:translator>erglo (de-DE)</em:translator>		
+		<em:translator>lcw (de-DE)</em:translator>		
 	</Description>
 	</em:localized>
     
@@ -89,6 +89,17 @@
 	
 	<em:localized>
 	<Description>
+		<em:locale>pt-BR</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Extensão para limpar e otimizar seu banco de dados de locais do Firefox.</em:description>
+		<em:creator>Irvin Chen</em:creator>
+		<em:contributor>Todos os colaboradores estão listados no arquivo license.txt</em:contributor>
+		<em:translator>Marcelo Ghelman (pt-BR)</em:translator>		
+	</Description>
+	</em:localized>
+	
+	<em:localized>
+	<Description>
 		<em:locale>pt-PT</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Extensão para limpar a base de dados places do firefox.</em:description>
@@ -106,6 +117,28 @@
 		<em:creator>Ирвин Чен</em:creator>
 		<em:contributor>Все участники перечислены в файле license.txt</em:contributor>
 		<em:translator>Пирятинский Виталий (ru-RU)</em:translator>		
+	</Description>
+	</em:localized>
+	    
+	<em:localized>
+	<Description>
+		<em:locale>mk-MK</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Екстензија за чистење на вашите firefox бази на податоци на посетени места.</em:description>
+		<em:creator>Irvin Chen</em:creator>
+		<em:contributor>Сите соработници се наведени во лиценцата.txt</em:contributor>
+		<em:translator>Renegade (mk-MK)</em:translator>		
+	</Description>
+	</em:localized>    
+
+	<em:localized>
+	<Description>
+		<em:locale>sr-RS</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Чишћење и сажимање базе ваших места у Фајерфоксу.</em:description>
+		<em:creator>Irvin Chen</em:creator>
+		<em:contributor>Списак свих помоћника се налази у датотеци license.txt</em:contributor>
+		<em:translator>Република Српска (sr-RS)</em:translator>		
 	</Description>
 	</em:localized>
 	    

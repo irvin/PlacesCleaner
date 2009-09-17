@@ -1,15 +1,14 @@
-<!ENTITY panel.cleannow 	"Clean Places now!">
-<!ENTITY panel.preference 	"Preference...">
-
-<!ENTITY pref.title			"PlacesCleaner Preference">
-<!ENTITY pref.automaticclean	"Automatic Clean">
-<!ENTITY pref.manualclean	"Manual Clean">
-<!ENTITY pref.every			"Every">
-<!ENTITY pref.days			"days">
-<!ENTITY pref.hidestatus	"Hide Statusbar Icon">
-<!ENTITY pref.for			"For">
-<!ENTITY pref.daysafter		"days after clean">
-<!ENTITY pref.needrestart	"* Need restart firefox">
-<!ENTITY pref.onlyvacuum	"Only vacuum, don't clean useless history entries">
-<!ENTITY pref.viewlessthan	"delete entries viewing less than">
-<!ENTITY pref.times			"times">
+<!ENTITY panel.cleannow "Clean Places now!">
+<!ENTITY panel.preference "Preference...">
+<!ENTITY pref.title "PlacesCleaner Preference">
+<!ENTITY pref.automaticclean "Automatic Clean">
+<!ENTITY pref.manualclean "Manual Clean">
+<!ENTITY pref.every "Every">
+<!ENTITY pref.days "days">
+<!ENTITY pref.hidestatus "Hide Statusbar Icon">
+<!ENTITY pref.for "For">
+<!ENTITY pref.daysafter "days after clean">
+<!ENTITY pref.needrestart "* Need restart firefox">
+<!ENTITY pref.onlyvacuum "Only vacuum, don't clean useless history entries">
+<!ENTITY pref.viewlessthan "delete entries viewed">
+<!ENTITY pref.times "times or less">

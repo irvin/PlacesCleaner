@@ -1,14 +1,14 @@
 <!ENTITY panel.cleannow "Places-Datenbank jetzt bereinigen!">
 <!ENTITY panel.preference "Einstellungen...">
 <!ENTITY pref.title "PlacesCleaner - Einstellungen">
-<!ENTITY pref.automaticclean "Automatic Clean">
-<!ENTITY pref.manualclean "Manual Clean">
-<!ENTITY pref.every "Every">
-<!ENTITY pref.days "days">
-<!ENTITY pref.hidestatus "Hide Statusbar Icon">
-<!ENTITY pref.for "For">
-<!ENTITY pref.daysafter "days after clean">
-<!ENTITY pref.needrestart "* Need restart firefox">
-<!ENTITY pref.onlyvacuum "Only vacuum, don't clean useless history entries">
-<!ENTITY pref.viewlessthan "delete entries viewing less than">
-<!ENTITY pref.times "times">
+<!ENTITY pref.automaticclean "Automatisch bereinigen">
+<!ENTITY pref.manualclean "Handbetriebend bereinigen">
+<!ENTITY pref.every "Jeder">
+<!ENTITY pref.days "tage">
+<!ENTITY pref.hidestatus "Verbergen statusleiste Icon">
+<!ENTITY pref.for "Für">
+<!ENTITY pref.daysafter "Tage nach bereinigen">
+<!ENTITY pref.needrestart "* Nötig Firefox neu starten">
+<!ENTITY pref.onlyvacuum "Nur vacuum, nicht bereinigen unbrauchbare Einträge">
+<!ENTITY pref.viewlessthan "streichen besuchende Einträge">
+<!ENTITY pref.times "mals oder weniger">

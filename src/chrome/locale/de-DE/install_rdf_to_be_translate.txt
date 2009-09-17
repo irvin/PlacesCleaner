@@ -5,6 +5,6 @@
 		<em:description>Eine Erweiterung zum Bereinigen und Aufräumen der Places-Datenbank von Firefox.</em:description>
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Alle Mitwirkenden werden in der Datei license.txt aufgelistet.</em:contributor>
-		<em:translator>erglo (de-DE)</em:translator>		
+		<em:translator>lcw (de-DE)</em:translator>		
 	</Description>
 	</em:localized>

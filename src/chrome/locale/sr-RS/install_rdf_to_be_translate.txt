@@ -1,0 +1,10 @@
+	<em:localized>
+	<Description>
+		<em:locale>sr-RS</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Чишћење и сажимање базе ваших места у Фајерфоксу.</em:description>
+		<em:creator>Irvin Chen</em:creator>
+		<em:contributor>Списак свих помоћника се налази у датотеци license.txt</em:contributor>
+		<em:translator>Република Српска (sr-RS)</em:translator>		
+	</Description>
+	</em:localized>

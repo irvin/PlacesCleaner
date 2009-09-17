@@ -8,7 +8,7 @@
 <!ENTITY pref.hidestatus "Nie wyświetlaj ikony rozszerzenia na pasku stanu">
 <!ENTITY pref.for "przez">
 <!ENTITY pref.daysafter "dni po czyszczeniu">
-<!ENTITY pref.needrestart "*Wymaga ponownego uruchomienia Firefoksa">
+<!ENTITY pref.needrestart "* Wymaga ponownego uruchomienia Firefoksa">
 <!ENTITY pref.onlyvacuum "Tylko defragmentuj, nie usuwaj zbytecznych wpisów">
-<!ENTITY pref.viewlessthan "Usuwaj wpisy oglądane mniej niż">
-<!ENTITY pref.times "razy">
+<!ENTITY pref.viewlessthan "Usuwaj wpisy oglądane">
+<!ENTITY pref.times "lub mniej razy">
