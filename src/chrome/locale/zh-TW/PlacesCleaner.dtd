@@ -12,3 +12,5 @@
 <!ENTITY pref.onlyvacuum "只重整（不清除少用瀏覽歷史）">
 <!ENTITY pref.viewlessthan "清除瀏覽次數少於">
 <!ENTITY pref.times "次的歷史紀錄">
+<!ENTITY pref.backupfile "清理前備份收藏庫檔案">
+<!ENTITY pref.showfilesize "清理時顯示檔案大小變化">

@@ -15,6 +15,8 @@
 		<preference id="PlacesCleaner-lastvacuumtime-pref" name="extensions.PlacesCleaner.lastvacuumtime" type="string" />
 		<preference id="PlacesCleaner-hidestatus-pref" name="extensions.PlacesCleaner.hidestatus" type="bool" />
 		<preference id="PlacesCleaner-onlyvacuum-pref" name="extensions.PlacesCleaner.onlyvacuum" type="bool" />
+		<preference id="PlacesCleaner-backupfile-pref" name="extensions.PlacesCleaner.backupfile" type="bool" />
+		<preference id="PlacesCleaner-showfilesize-pref" name="extensions.PlacesCleaner.showfilesize" type="bool" />
     </preferences>
     
     <radiogroup id="PlacesCleaner-chkAuto" preference="PlacesCleaner-autoclean-pref">
@@ -52,6 +54,10 @@
    		<textbox id="PlacesCleaner-viewtime" width="30" preference="PlacesCleaner-viewtime-pref" />
    		<label  id="PlacesCleaner-viewtime2" value="&pref.times;" />
 	</hbox>	
+	
+	<checkbox id="chk-backup" label="&pref.backupfile;" preference="PlacesCleaner-backupfile-pref"/>    
+	<checkbox id="chk-showsize" label="&pref.showfilesize;" preference="PlacesCleaner-showfilesize-pref"/>    
+	
 	<separator class="thin"/>    
   </prefpane>
   

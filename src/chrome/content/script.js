@@ -1,13 +1,14 @@
 var PlacesCleaner = {
 	onLoad: function(){
-        var booAutoClean = PlacesCleaner.checkAutoClean();
-        var booHideStatus = PlacesCleaner.checkHideStatus();
-        var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
+		var booAutoClean = PlacesCleaner.checkAutoClean();
+		var booHideStatus = PlacesCleaner.checkHideStatus();
+		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
+		var booBackupFile = PlacesCleaner.checkBackupFile();
+		var booShowFileSize = PlacesCleaner.checkShowFileSize();
 		var intViewTime = PlacesCleaner.getintViewTime();
 		var intDayInterval = PlacesCleaner.getintDayInterval();
 		var charLastVacuumTime = PlacesCleaner.getLastVacuumTime();
 		var intVacuumInterval = Date.now() - charLastVacuumTime - (intDayInterval * 1000 * 60 * 60 * 24)		
-
 
 		// Check and hide statusbar icon		
 		if (booAutoClean == true){
@@ -56,16 +57,44 @@ var PlacesCleaner = {
 	
 	
 	cleanIt: function(){
+		
+		/*	Code to check filesize and backup places.sqlite
+			Adapted from Bootleq http://bootleq.blogspot.com/2009/10/placescleaner-bookmarklet_14.html */
+		var ProfD = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("ProfD", Components.interfaces.nsIFile);
+		var sqliteFile = ProfD.clone();
+		sqliteFile.append("places.sqlite");
+
+		//Calculate file size
+		var booShowFileSize = PlacesCleaner.checkShowFileSize();
+		if(booShowFileSize == true) {
+			var originalSize = sqliteFile.fileSize;
+		}
+
+		//Backup places.sqlite	
+		var booBackupFile = PlacesCleaner.checkBackupFile();
+		if(booBackupFile == true) {
+			var bkFile = ProfD.clone();
+			bkFile.append("placescleaner_places.bak");
+			if (bkFile.exists()) bkFile.remove(true);
+			try {
+				sqliteFile.copyTo( ProfD, bkFile.leafName );
+			}
+			catch(e) {
+				alert('Backup places database error!\n '+e);
+				return;
+			}
+		}		
+		
 		// Display begin clean message
-        var strGetRes = document.getElementById("strRes");
-        var text = strGetRes.getString("BeginClean");
- 		var alertsService = Components.classes["@mozilla.org/alerts-service;1"].getService(Components.interfaces.nsIAlertsService);
-        alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
-     
-     	var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
-     	var booHideStatus = PlacesCleaner.checkHideStatus();
-        var intViewTime = PlacesCleaner.getintViewTime();
-        intViewTime = intViewTime.toString();
+		var strGetRes = document.getElementById("strRes");
+		var text = strGetRes.getString("BeginClean");
+		var alertsService = Components.classes["@mozilla.org/alerts-service;1"].getService(Components.interfaces.nsIAlertsService);
+		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
+		
+		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
+		var booHideStatus = PlacesCleaner.checkHideStatus();
+		var intViewTime = PlacesCleaner.getintViewTime();
+		intViewTime = intViewTime.toString();
 
 		// Begin clean	
 		
@@ -82,8 +111,19 @@ var PlacesCleaner = {
 		
         Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("VACUUM");
 
+		
 		// Display end clean message
 		var text = strGetRes.getString("EndClean");
+		// Display After clean fileSize
+		if(booShowFileSize == true) {
+			sqliteFile = ProfD.clone();
+			sqliteFile.append("places.sqlite");
+			var ratio = Math.round( (originalSize-sqliteFile.fileSize)*10000/originalSize )/100;		
+			var text2 = strGetRes.getString("FileSizeAfter");	
+			var text3 = strGetRes.getString("FileSizeReduce");
+			text = text + '\n' + text2 + ' ' + Math.round(originalSize/10.24)/100 + ' KB → ' + Math.round(sqliteFile.fileSize/10.24)/100 + ' KB' + text3 + ' ' + ratio  + '%';
+		}
+				
 		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
 		
 		// Save last clean time			
@@ -132,6 +172,21 @@ var PlacesCleaner = {
          .getBoolPref("hidestatus");
 	},
 	
+
+	checkBackupFile: function() {
+	     return Components.classes["@mozilla.org/preferences-service;1"]
+         .getService(Components.interfaces.nsIPrefService)
+         .getBranch("extensions.PlacesCleaner.")
+         .getBoolPref("backupfile");
+	},
+	
+	checkShowFileSize: function() {
+	     return Components.classes["@mozilla.org/preferences-service;1"]
+         .getService(Components.interfaces.nsIPrefService)
+         .getBranch("extensions.PlacesCleaner.")
+         .getBoolPref("showfilesize");
+	},	
+
 	getLastVacuumTime: function() {
 	     return Components.classes["@mozilla.org/preferences-service;1"]
          .getService(Components.interfaces.nsIPrefService)
