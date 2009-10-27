@@ -16,7 +16,7 @@
 		<preference id="PlacesCleaner-hidestatus-pref" name="extensions.PlacesCleaner.hidestatus" type="bool" />
 		<preference id="PlacesCleaner-onlyvacuum-pref" name="extensions.PlacesCleaner.onlyvacuum" type="bool" />
 		<preference id="PlacesCleaner-backupfile-pref" name="extensions.PlacesCleaner.backupfile" type="bool" />
-		<preference id="PlacesCleaner-showfilesize-pref" name="extensions.PlacesCleaner.showfilesize" type="bool" />
+		<preference id="PlacesCleaner-showfileinfo-pref" name="extensions.PlacesCleaner.showfileinfo" type="bool" />
     </preferences>
     
     <radiogroup id="PlacesCleaner-chkAuto" preference="PlacesCleaner-autoclean-pref">
@@ -56,7 +56,7 @@
 	</hbox>	
 	
 	<checkbox id="chk-backup" label="&pref.backupfile;" preference="PlacesCleaner-backupfile-pref"/>    
-	<checkbox id="chk-showsize" label="&pref.showfilesize;" preference="PlacesCleaner-showfilesize-pref"/>    
+	<checkbox id="chk-showinfo" label="&pref.showfileinfo;" preference="PlacesCleaner-showfileinfo-pref"/>    
 	
 	<separator class="thin"/>    
   </prefpane>
