@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>PlacesCleaner@sto.tw</em:id>
-    <em:version>0.4dev</em:version>
+    <em:version>0.3.5</em:version>
     <em:type>2</em:type>
     <em:optionsURL>chrome://PlacesCleaner/content/prefs.xul</em:optionsURL>
     <em:iconURL>chrome://PlacesCleaner/content/edit-clear-32.png</em:iconURL>
@@ -30,6 +30,7 @@
 		<em:description>Extension to clean and vacuum your firefox places database.</em:description>
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>All contributors are listed in license.txt</em:contributor>
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
 	</Description>
 	</em:localized>
 
@@ -40,6 +41,7 @@
 		<em:description>這是一個收藏庫清理工，整理並清除收藏庫無用的瀏覽歷史。</em:description>
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>All contributors are listed in license.txt</em:contributor>
+		<em:homepageURL>http://code.google.com/p/placescleaner/wiki/ZhHome</em:homepageURL>		
 	</Description>
 	</em:localized>    
 
@@ -51,6 +53,7 @@
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>所有贡献者已列于license.txt</em:contributor>
 		<em:translator>xmoke (zh-CN)</em:translator>		
+		<em:homepageURL>http://code.google.com/p/placescleaner/wiki/ZhHome</em:homepageURL>		
 	</Description>
 	</em:localized>  
     
@@ -62,6 +65,7 @@
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Alle Mitwirkenden werden in der Datei license.txt aufgelistet.</em:contributor>
 		<em:translator>lcw (de-DE)</em:translator>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
 	</Description>
 	</em:localized>
     
@@ -73,6 +77,7 @@
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>La liste des contributeurs est disponible dans license.txt</em:contributor>
 		<em:translator>myahoo (fr)</em:translator>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
 	</Description>
 	</em:localized>
 
@@ -83,7 +88,8 @@
 		<em:description>Rozszerzenie do defragmentacji i czyszcznia bazy odwiedzonych miejsc.</em:description>
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>All contributors are listed in license.txt</em:contributor>
-		<em:translator>Leszek(teo)Życzkowski (pl-PL)</em:translator>		
+		<em:translator>Leszek(teo)Życzkowski (pl-PL)</em:translator>	
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>			
 	</Description>
 	</em:localized>
 	
@@ -95,6 +101,7 @@
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Todos os colaboradores estão listados no arquivo license.txt</em:contributor>
 		<em:translator>Marcelo Ghelman (pt-BR)</em:translator>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
 	</Description>
 	</em:localized>
 	
@@ -106,6 +113,7 @@
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Todos os que contribuem estão indicados em license.txt</em:contributor>
 		<em:translator>Carlos Simão (pt-PT)</em:translator>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
 	</Description>
 	</em:localized>
 
@@ -117,6 +125,7 @@
 		<em:creator>Ирвин Чен</em:creator>
 		<em:contributor>Все участники перечислены в файле license.txt</em:contributor>
 		<em:translator>Пирятинский Виталий (ru-RU)</em:translator>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
 	</Description>
 	</em:localized>
 	    
@@ -128,6 +137,7 @@
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Сите соработници се наведени во лиценцата.txt</em:contributor>
 		<em:translator>Renegade (mk-MK)</em:translator>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
 	</Description>
 	</em:localized>    
 
@@ -138,7 +148,8 @@
 		<em:description>Чишћење и сажимање базе ваших места у Фајерфоксу.</em:description>
 		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Списак свих помоћника се налази у датотеци license.txt</em:contributor>
-		<em:translator>Република Српска (sr-RS)</em:translator>		
+		<em:translator>Република Српска (sr-RS)</em:translator>	
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>			
 	</Description>
 	</em:localized>
 	    

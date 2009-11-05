@@ -12,3 +12,4 @@
 <!ENTITY pref.onlyvacuum "Apenas otimizar. Não limpar entradas de histórico sem uso">
 <!ENTITY pref.viewlessthan "Apagar entradas vistas">
 <!ENTITY pref.times "vezes ou menos">
+<!ENTITY pref.backupfile "Fazer cópia de segurança do arquivo de dados de locais antes de limpar">

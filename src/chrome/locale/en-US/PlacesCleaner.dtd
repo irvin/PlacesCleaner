@@ -13,4 +13,3 @@
 <!ENTITY pref.viewlessthan "delete entries viewed">
 <!ENTITY pref.times "times or less">
 <!ENTITY pref.backupfile "Backup places database file before cleaning">
-<!ENTITY pref.showfileinfo "Showing detailed info when cleaning">

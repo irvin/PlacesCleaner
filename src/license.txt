@@ -30,7 +30,7 @@ The following license applies to all files:
  * * teo from BabelZilla, for preference window adjustment. (090828)
  * * quirK from mozilla addons site, for preference window adjustment. (090915)
  * * Bootleq, backup & showing places file size codes adapted from whom. (091027)
- * * 	http://bootleq.blogspot.com/2009/10/placescleaner-bookmarklet_14.html */
+ * * 	http://bootleq.blogspot.com/2009/10/placescleaner-bookmarklet_14.html
  * *
  * 
  * Translator(s): 

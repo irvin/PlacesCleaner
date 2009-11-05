@@ -12,3 +12,4 @@
 <!ENTITY pref.onlyvacuum "Tylko defragmentuj, nie usuwaj zbytecznych wpisów">
 <!ENTITY pref.viewlessthan "Usuwaj wpisy oglądane">
 <!ENTITY pref.times "lub mniej razy">
+<!ENTITY pref.backupfile "Twórz kopię bazy danych przed wyczyszczeniem">

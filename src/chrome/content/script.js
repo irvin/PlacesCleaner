@@ -4,7 +4,6 @@ var PlacesCleaner = {
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
 		var booBackupFile = PlacesCleaner.checkBackupFile();
-		var booShowFileInfo = PlacesCleaner.checkShowFileInfo();
 		var intViewTime = PlacesCleaner.getintViewTime();
 		var intDayInterval = PlacesCleaner.getintDayInterval();
 		var charLastVacuumTime = PlacesCleaner.getLastVacuumTime();
@@ -58,6 +57,20 @@ var PlacesCleaner = {
 	
 	cleanIt: function(){
 		
+		// Init nsIPromptService for display alert dialog
+		var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
+		
+		// Init nsIAlertsService and click listener nsIObserver
+		// Listener to handle click on the end clean alert message
+		var listener = {
+			observe: function(subject, topic, data) {
+				if (topic == "alertclickcallback")
+					prompts.alert(null, "PlacesCleaner", data);
+			}
+		}	
+		var alertsService = Components.classes["@mozilla.org/alerts-service;1"].getService(Components.interfaces.nsIAlertsService);
+		
+		
 		/*	Code to check file info and backup places.sqlite
 			Adapted from Bootleq http://bootleq.blogspot.com/2009/10/placescleaner-bookmarklet_14.html */
 		var ProfD = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("ProfD", Components.interfaces.nsIFile);
@@ -65,22 +78,20 @@ var PlacesCleaner = {
 		sqliteFile.append("places.sqlite");
 
 		//Calculate file size and places database recoeds num.
-		var booShowFileInfo = PlacesCleaner.checkShowFileInfo();
-		if(booShowFileInfo == true) {
-			var originalSize = sqliteFile.fileSize;			
-			//Get history items number before cleaning
-			var numbe = Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.createStatement("SELECT count(*) FROM moz_historyvisits;");
-			try{
-				while (numbe.step()) {  
-					var originalRecords = numbe.getString(0);
-				} 
-			}  
-			finally {  
-				numbe.reset();  
-			}
+		var originalSize = sqliteFile.fileSize;			
+		//Get history items number before cleaning
+		var numbe = Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.createStatement("SELECT count(*) FROM moz_historyvisits;");
+		try{
+			while (numbe.step()) {  
+				var originalRecords = numbe.getString(0);
+			} 
+		}  
+		finally {  
+			numbe.reset();  
 		}
 
-		//Backup places.sqlite	
+		//Backup places.sqlite
+		
 		var booBackupFile = PlacesCleaner.checkBackupFile();
 		if(booBackupFile == true) {
 			var bkFile = ProfD.clone();
@@ -90,16 +101,17 @@ var PlacesCleaner = {
 				sqliteFile.copyTo( ProfD, bkFile.leafName );
 			}
 			catch(e) {
-				alert('Backup places database error!\n '+e);
+				alert('Backup places database error!'+ PlacesCleaner.getEol() +e);
 				return;
 			}
 		}		
 
 		
 		// Display begin clean message
+		
 		var strGetRes = document.getElementById("strRes");
 		var text = strGetRes.getString("BeginClean");
-		var alertsService = Components.classes["@mozilla.org/alerts-service;1"].getService(Components.interfaces.nsIAlertsService);
+		
 		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
 		
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
@@ -125,35 +137,41 @@ var PlacesCleaner = {
 		
 		// Display end clean message
 		var text = strGetRes.getString("EndClean");
-		// Display After clean fileinfo
-		if(booShowFileInfo == true) {
-			sqliteFile = ProfD.clone();
-			sqliteFile.append("places.sqlite");
-			//Calculate file size reduced ratio	
-			var ratio = Math.round( (originalSize-sqliteFile.fileSize)*10000/originalSize )/100;
-			//Get history items number after cleaning
-			var numbe = Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.createStatement("SELECT count(*) FROM moz_historyvisits;");
-			try{
-				while (numbe.step()) {  
-					var afterRecords = numbe.getString(0);
-				}
-			}  
-			finally {  
-				numbe.reset();  
+		var detailtext = "";
+		
+		// Display after clean fileinfo 
+		
+		// Calculate file size reduced ratio	
+		sqliteFile = ProfD.clone();
+		sqliteFile.append("places.sqlite");
+		var ratio = Math.round( (originalSize-sqliteFile.fileSize)*10000/originalSize )/100;
+		
+		// Get after clean history items number
+		var numbe = Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.createStatement("SELECT count(*) FROM moz_historyvisits;");
+		try{
+			while (numbe.step()) {  
+				var afterRecords = numbe.getString(0);
 			}
-			
-			var recordsnum = afterRecords - originalRecords;		
-			
-			var text2 = strGetRes.getString("FileSizeAfter");	
-			var text3 = strGetRes.getString("FileSizeReduce");
-			text = text + '\n' + text2 + ' ' + Math.round(originalSize/10.24)/100 + ' KB → ' + Math.round(sqliteFile.fileSize/10.24)/100 + ' KB' + text3 + ' ' + ratio  + '%' ;
-			var text2 = strGetRes.getString("FileRecordsAfter");	
-			var text3 = strGetRes.getString("FileRecordsReduce");
-			var text4 = strGetRes.getString("FileRecordsName");
-			text = text + '\n' + text2 + ' ' + originalRecords + ' → ' + afterRecords + ' ' + text4 + text3 + ' ' + recordsnum  + ' ' + text4 ;
+		}  
+		finally {  
+			numbe.reset();  
 		}
+		
+		var recordsnum = originalRecords - afterRecords;		
 				
-		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
+		var text2 = strGetRes.getString("FileSizeAfter");	
+		var text3 = strGetRes.getString("FileSizeReduce");
+		detailtext = text2 + ' ' + Math.round(originalSize/10.24)/100 + ' KB → ' + Math.round(sqliteFile.fileSize/10.24)/100 + ' KB' + text3 + ' ' + ratio  + '%' ;
+		var text2 = strGetRes.getString("FileRecordsAfter");	
+		var text3 = strGetRes.getString("FileRecordsReduce");
+		var text4 = strGetRes.getString("FileRecordsName");
+		detailtext = detailtext + '\n' + text2 + ' ' + originalRecords + ' → ' + afterRecords + ' ' + text4 + text3 + ' ' + recordsnum  + ' ' + text4 ;	
+
+		// if (PlacesCleaner.getPlatform() == 'mac'){
+		// Mac can handle multi line alert message
+		// alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", longtext, true, longtext, listener);
+		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, true, detailtext, listener);
+		
 		
 		// Save last clean time			
 		var LastVacuumDay = Date.now();
@@ -201,26 +219,56 @@ var PlacesCleaner = {
          .getBoolPref("hidestatus");
 	},
 	
-
 	checkBackupFile: function() {
 	     return Components.classes["@mozilla.org/preferences-service;1"]
          .getService(Components.interfaces.nsIPrefService)
          .getBranch("extensions.PlacesCleaner.")
          .getBoolPref("backupfile");
 	},
-	
-	checkShowFileInfo: function() {
-	     return Components.classes["@mozilla.org/preferences-service;1"]
-         .getService(Components.interfaces.nsIPrefService)
-         .getBranch("extensions.PlacesCleaner.")
-         .getBoolPref("showfileinfo");
-	},	
 
 	getLastVacuumTime: function() {
 	     return Components.classes["@mozilla.org/preferences-service;1"]
          .getService(Components.interfaces.nsIPrefService)
          .getBranch("extensions.PlacesCleaner.")
          .getCharPref("lastvacuumtime");
+	},
+	
+	
+	// String EOL platform dependent
+	// http://forums.mozillazine.org/viewtopic.php?f=19&t=572038
+	/*
+	getPlatform: function() {
+	    var p = navigator.platform.toLowerCase(); // platform
+	    if(p.indexOf('win') != -1) return 'win'; // win
+	    else if(p.indexOf('mac') != -1) return 'mac'; // mac
+	    else if(p.indexOf('linux') != -1) return 'linux'; // linux	    
+	    else return 'other'; // other (nix)
+	},
+	*/
+	
+	getEol: function() {
+		//Useless because alert message couldn't handle multiline message
+		return '\n';	
+		
+		/*
+		var console = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
+        switch(PlacesCleaner.getPlatform()) {
+	        case 'win': 
+		       	console.logStringMessage("win");
+	        	return '\r\n';
+	        case 'mac': 
+		       	console.logStringMessage("mac");
+	        	return '\r\n';
+	        case 'linux': 
+		       	console.logStringMessage("linux");
+	        	return '\r\n';	        	
+	        case 'other': 
+		       	console.logStringMessage("oth");
+	        	return '\n';
+	        default: 
+	        	return '<eol>';
+	    }
+	    */
 	},
 
 };

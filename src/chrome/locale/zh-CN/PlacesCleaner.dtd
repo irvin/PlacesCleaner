@@ -12,3 +12,4 @@
 <!ENTITY pref.onlyvacuum "只压缩数据库不清理无用历史条目">
 <!ENTITY pref.viewlessthan "删除浏览次数少于">
 <!ENTITY pref.times "次的条目">
+<!ENTITY pref.backupfile "清理前备份数据库">
