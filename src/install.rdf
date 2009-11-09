@@ -5,13 +5,10 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>PlacesCleaner@sto.tw</em:id>
-    <em:version>0.3.5</em:version>
+    <em:version>0.3.5.1dev</em:version>
     <em:type>2</em:type>
     <em:optionsURL>chrome://PlacesCleaner/content/prefs.xul</em:optionsURL>
     <em:iconURL>chrome://PlacesCleaner/content/edit-clear-32.png</em:iconURL>
-    <em:name>PlacesCleaner</em:name>
-    <em:description>Extension to clean your firefox places database.</em:description>
-    <em:creator>Irvin Chen</em:creator>    
    
     <!-- Target Application this extension can install into, 
          with minimum and maximum supported versions. --> 
@@ -28,9 +25,35 @@
 		<em:locale>en-US</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Extension to clean and vacuum your firefox places database.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>All contributors are listed in license.txt</em:contributor>
 		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>	
+	</Description>
+	</em:localized>
+
+	<em:localized>
+	<Description>
+		<em:locale>es-ES</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Complemento para limpiar la base de datos de Firefox de sitios.</em:description>
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>	
+		<em:translator>Roberto Cervero (es-ES)</em:translator>	
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>			
 	</Description>
 	</em:localized>
 
@@ -39,9 +62,16 @@
 		<em:locale>zh-TW</em:locale>
 		<em:name>PlacesCleaner 收藏庫清潔工</em:name>
 		<em:description>這是一個收藏庫清理工，整理並清除收藏庫無用的瀏覽歷史。</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>All contributors are listed in license.txt</em:contributor>
-		<em:homepageURL>http://code.google.com/p/placescleaner/wiki/ZhHome</em:homepageURL>		
+		<em:homepageURL>http://code.google.com/p/placescleaner/wiki/ZhHome</em:homepageURL>	
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>				
 	</Description>
 	</em:localized>    
 
@@ -50,10 +80,17 @@
 		<em:locale>zh-CN</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>清理Places数据库加快firefox</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>所有贡献者已列于license.txt</em:contributor>
 		<em:translator>xmoke (zh-CN)</em:translator>		
 		<em:homepageURL>http://code.google.com/p/placescleaner/wiki/ZhHome</em:homepageURL>		
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>			
 	</Description>
 	</em:localized>  
     
@@ -62,10 +99,18 @@
 		<em:locale>de-DE</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Eine Erweiterung zum Bereinigen und Aufräumen der Places-Datenbank von Firefox.</em:description>
-		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>Alle Mitwirkenden werden in der Datei license.txt aufgelistet.</em:contributor>
 		<em:translator>lcw (de-DE)</em:translator>		
 		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>			
 	</Description>
 	</em:localized>
     
@@ -74,10 +119,17 @@
 		<em:locale>fr</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Une extension pour nettoyer et défragmenter la base de données des marque-pages de Firefox.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>La liste des contributeurs est disponible dans license.txt</em:contributor>
 		<em:translator>myahoo (fr)</em:translator>		
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>	
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>				
 	</Description>
 	</em:localized>
 
@@ -86,10 +138,17 @@
 		<em:locale>pl-PL</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Rozszerzenie do defragmentacji i czyszcznia bazy odwiedzonych miejsc.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>All contributors are listed in license.txt</em:contributor>
 		<em:translator>Leszek(teo)Życzkowski (pl-PL)</em:translator>	
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>			
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>						
 	</Description>
 	</em:localized>
 	
@@ -98,10 +157,17 @@
 		<em:locale>pt-BR</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Extensão para limpar e otimizar seu banco de dados de locais do Firefox.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>Todos os colaboradores estão listados no arquivo license.txt</em:contributor>
 		<em:translator>Marcelo Ghelman (pt-BR)</em:translator>		
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>	
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>				
 	</Description>
 	</em:localized>
 	
@@ -110,10 +176,17 @@
 		<em:locale>pt-PT</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Extensão para limpar a base de dados places do firefox.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>Todos os que contribuem estão indicados em license.txt</em:contributor>
 		<em:translator>Carlos Simão (pt-PT)</em:translator>		
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>	
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>				
 	</Description>
 	</em:localized>
 
@@ -122,10 +195,17 @@
 		<em:locale>ru-RU</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Расширение для очистки и уборки базы данных «Собранное» Firefox</em:description>
-		<em:creator>Ирвин Чен</em:creator>
-		<em:contributor>Все участники перечислены в файле license.txt</em:contributor>
 		<em:translator>Пирятинский Виталий (ru-RU)</em:translator>		
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>					
 	</Description>
 	</em:localized>
 	    
@@ -134,10 +214,17 @@
 		<em:locale>mk-MK</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Екстензија за чистење на вашите firefox бази на податоци на посетени места.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>Сите соработници се наведени во лиценцата.txt</em:contributor>
 		<em:translator>Renegade (mk-MK)</em:translator>		
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>		
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>					
 	</Description>
 	</em:localized>    
 
@@ -146,10 +233,17 @@
 		<em:locale>sr-RS</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Чишћење и сажимање базе ваших места у Фајерфоксу.</em:description>
-		<em:creator>Irvin Chen</em:creator>
-		<em:contributor>Списак свих помоћника се налази у датотеци license.txt</em:contributor>
 		<em:translator>Република Српска (sr-RS)</em:translator>	
-		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>			
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>						
 	</Description>
 	</em:localized>
 	    

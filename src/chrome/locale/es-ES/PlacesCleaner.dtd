@@ -1,0 +1,15 @@
+<!ENTITY panel.cleannow "¡Limpiar Sitios ahora!">
+<!ENTITY panel.preference "Preferencias...">
+<!ENTITY pref.title "Preferencias del limpiador de sitios">
+<!ENTITY pref.automaticclean "Limpieza automática">
+<!ENTITY pref.manualclean "Limpieza Manual">
+<!ENTITY pref.every "Cada">
+<!ENTITY pref.days "días">
+<!ENTITY pref.hidestatus "Ocultar icono de la barra de estado">
+<!ENTITY pref.for "Durante">
+<!ENTITY pref.daysafter "días después de limpiar">
+<!ENTITY pref.needrestart "* Necesita reiniciar Firefox">
+<!ENTITY pref.onlyvacuum "Sólo vaciar, no limpiar entradas no usadas del historial">
+<!ENTITY pref.viewlessthan "borrar entradas vistas">
+<!ENTITY pref.times "veces o menos">
+<!ENTITY pref.backupfile "Respaldar base de datos de sitios antes de limpiar">
