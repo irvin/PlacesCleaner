@@ -37,6 +37,7 @@ The following license applies to all files:
  * *
  * * erglo 		(de-DE)
  * * lcw 		(de-DE)
+ * * Fux 		(de-DE)
  * * Roberto Cervero (es-ES)
  * * myahoo 	(fr)
  * * renegade06 (mk-MK)

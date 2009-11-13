@@ -1,0 +1,15 @@
+<!ENTITY panel.cleannow "Nettoyer les marque-pages maintenant !">
+<!ENTITY panel.preference "Préférences…">
+<!ENTITY pref.title "Préférences de PlacesCleaner">
+<!ENTITY pref.automaticclean "Nettoyage automatique">
+<!ENTITY pref.manualclean "Nettoyage manuel">
+<!ENTITY pref.every "Tous les">
+<!ENTITY pref.days "jours">
+<!ENTITY pref.hidestatus "Masquer l'icône de la barre d'état">
+<!ENTITY pref.for "Pendant">
+<!ENTITY pref.daysafter "jours après le nettoyage">
+<!ENTITY pref.needrestart "* Nécessite un redémarrage de Firefox">
+<!ENTITY pref.onlyvacuum "Défragmenter uniquement, sans supprimer les entrées superflues">
+<!ENTITY pref.viewlessthan "Effacer les entrées consultées moins de">
+<!ENTITY pref.times "fois">
+<!ENTITY pref.backupfile "Sauvegarder le fichier de la base de données d'adresses avant de nettoyer">

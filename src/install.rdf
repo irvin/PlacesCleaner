@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>PlacesCleaner@sto.tw</em:id>
-    <em:version>0.3.5.1dev</em:version>
+    <em:version>0.3.5.1</em:version>
     <em:type>2</em:type>
     <em:optionsURL>chrome://PlacesCleaner/content/prefs.xul</em:optionsURL>
     <em:iconURL>chrome://PlacesCleaner/content/edit-clear-32.png</em:iconURL>
@@ -19,6 +19,25 @@
         <em:maxVersion>3.7a1pre</em:maxVersion>
       </Description>
     </em:targetApplication>
+       
+	<em:localized>
+	<Description>
+		<em:locale>de-DE</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Eine Erweiterung zum Bereinigen und Aufräumen der Places-Datenbank von Firefox.</em:description>
+		<em:translator>erglo, Fux (de-DE)</em:translator>				
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>	
+	</Description>
+	</em:localized>       
        
 	<em:localized>
 	<Description>
@@ -45,6 +64,25 @@
 		<em:description>Complemento para limpiar la base de datos de Firefox de sitios.</em:description>
 		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>	
 		<em:translator>Roberto Cervero (es-ES)</em:translator>	
+		<em:creator>Irvin Chen</em:creator>    
+	    <em:developer>Littlebtc</em:developer>
+		<em:contributor>Tango project</em:contributor>	
+		<em:contributor>Clyde Wu</em:contributor>	
+		<em:contributor>softcup</em:contributor>	
+		<em:contributor>teo</em:contributor>	
+		<em:contributor>quirK</em:contributor>	
+		<em:contributor>Bootleq</em:contributor>	
+		<em:contributor>All contributors are listed in license.txt</em:contributor>			
+	</Description>
+	</em:localized>
+
+	<em:localized>
+	<Description>
+		<em:locale>fr</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Une extension pour nettoyer et défragmenter la base de données des marque-pages de Firefox.</em:description>
+		<em:homepageURL>http://placescleaner.googlecode.com/</em:homepageURL>	
+		<em:translator>myahoo (fr)</em:translator>		
 		<em:creator>Irvin Chen</em:creator>    
 	    <em:developer>Littlebtc</em:developer>
 		<em:contributor>Tango project</em:contributor>	
