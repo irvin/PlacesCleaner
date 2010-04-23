@@ -49,16 +49,16 @@
     </radiogroup>		
 
 	<checkbox id="chk-vacuum" label="&pref.onlyvacuum;" preference="PlacesCleaner-onlyvacuum-pref"  oncommand="PrefWindow.setOnlyVacuum();"/>    
-	<hbox class="indent" align="center">
-		<label id="PlacesCleaner-viewtime1" value="&pref.viewlessthan;" />
-   		<textbox id="PlacesCleaner-viewtime" width="30" preference="PlacesCleaner-viewtime-pref" />
-   		<label  id="PlacesCleaner-viewtime2" value="&pref.times;" />
-	</hbox>	
+	<groupbox>
+		<hbox align="center">
+			<label id="lblOnlyVacuum1" value="&pref.viewlessthan;" />
+			<textbox id="lblOnlyVacuum2" width="30" preference="PlacesCleaner-viewtime-pref" />
+			<label id="lblOnlyVacuum3" value="&pref.times;" />
+		</hbox>
+		<separator class="thin"/>
+	</groupbox>
 	
-	<checkbox id="chk-backup" label="&pref.backupfile;" preference="PlacesCleaner-backupfile-pref"/>    
-	<!-- Redesign for mac to display detail info through growl
-	<checkbox id="chk-showinfo" label="&pref.showfileinfo;" preference="PlacesCleaner-showfileinfo-pref"/>    
-	-->
+	<checkbox id="chk-backup" label="&pref.backupfile;" preference="PlacesCleaner-backupfile-pref"/>
 	
 	<separator class="thin"/>    
   </prefpane>
@@ -69,4 +69,10 @@
 		PrefWindow.chkAutoClean();
 	};
   </script>
+  
+	<!-- load i18n string in js -->
+	<stringbundleset>
+		<stringbundle id="strRes" src="chrome://PlacesCleaner/locale/PlacesCleaner.properties"/>
+	</stringbundleset>
+  
 </prefwindow>

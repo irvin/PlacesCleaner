@@ -1,6 +1,5 @@
 var PlacesCleaner = {
 	onLoad: function(){
-		var booVerNewThan36 = PlacesCleaner.checkVerNewerThan36();	//true: 3.6 & upper; false: Firefox 3.5
 		var booAutoClean = PlacesCleaner.checkAutoClean();
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
@@ -223,20 +222,7 @@ var PlacesCleaner = {
          .getBranch("extensions.PlacesCleaner.")
          .getCharPref("lastvacuumtime");
 	},
-	
-	checkVerNewerThan36: function() {
-		// Check firefox version if it's greater than 3.6
-		var versionChecker = Components.classes["@mozilla.org/xpcom/version-comparator;1"].getService(Components.interfaces.nsIVersionComparator);
-		if (versionChecker.compare(Application.version, "3.6") >= 0) {
-			  // code for >= 3.6
-			return true;
-		}
-		else {
- 			 // code for <  3.0b4			
-			 return false;			 
-		}
-	},
-	
+		
 	// String EOL platform dependent
 	// http://forums.mozillazine.org/viewtopic.php?f=19&t=572038
 	/*

@@ -1,6 +1,6 @@
 var PrefWindow = {
 
-	chkAutoClean: function(){	
+	chkAutoClean: function(){			
 		var booAutoClean = Components.classes["@mozilla.org/preferences-service;1"]
 			.getService(Components.interfaces.nsIPrefService)
 			.getBranch("extensions.PlacesCleaner.")
@@ -121,12 +121,21 @@ var PrefWindow = {
 	},
 
 	setOnlyVacuum: function(){
+		// Init nsIPromptService for display alert dialog
+		var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);	
+		var booVerNewThan36 = PrefWindow.checkVerNewerThan36();	//true: 3.6 & upper; false: Firefox 3.5
+
 		var element = document.getElementById("chk-vacuum");
-		var element2 = document.getElementById("PlacesCleaner-viewtime");
-		var element3 = document.getElementById("PlacesCleaner-viewtime1");
-		var element4 = document.getElementById("PlacesCleaner-viewtime2");
+		var element2 = document.getElementById("lblOnlyVacuum2");
+		var element3 = document.getElementById("lblOnlyVacuum1");
+		var element4 = document.getElementById("lblOnlyVacuum3");
 		
 		if (element.hasAttribute("checked")==true){
+			if (booVerNewThan36){
+				var strGetRes = document.getElementById("strRes");
+				var text = strGetRes.getString("OnlyVacuumOver36");
+				prompts.alert(null, "PlacesCleaner", text);
+			} 
 			element2.setAttribute("disabled", "true");
 			element3.setAttribute("disabled", "true");
 			element4.setAttribute("disabled", "true");
@@ -134,8 +143,19 @@ var PrefWindow = {
 			element2.removeAttribute("disabled");
 			element3.removeAttribute("disabled");
 			element4.removeAttribute("disabled");
-		}
-
+		}		
+		
     },
+	
+	checkVerNewerThan36: function() {
+		// Check firefox version if it's greater than 3.6
+		var versionChecker = Components.classes["@mozilla.org/xpcom/version-comparator;1"].getService(Components.interfaces.nsIVersionComparator);
+		if (versionChecker.compare(Application.version, "3.6") >= 0) {	// code for >= 3.6
+			return true;
+		}
+		else {	// code for <  3.0b4			
+			return false;			 
+		}
+	},	
 
 };

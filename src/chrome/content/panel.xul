@@ -30,7 +30,7 @@
 			<menuitem label="&panel.preference;" oncommand="PlacesCleaner.openOptions();"/>
 		</menupopup>
 	</popupset>
-
+	
 
 	<!-- load i18n string in js -->
 	<stringbundleset>
