@@ -1,40 +1,35 @@
 var PlacesCleaner = {
 	onLoad: function(){
+		var booVerNewThan36 = PlacesCleaner.checkVerNewerThan36();	//true: 3.6 & upper; false: Firefox 3.5
 		var booAutoClean = PlacesCleaner.checkAutoClean();
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
 		var booBackupFile = PlacesCleaner.checkBackupFile();
-		var intViewTime = PlacesCleaner.getintViewTime();
-		var intDayInterval = PlacesCleaner.getintDayInterval();
-		var charLastVacuumTime = PlacesCleaner.getLastVacuumTime();
-		var intVacuumInterval = Date.now() - charLastVacuumTime - (intDayInterval * 1000 * 60 * 60 * 24)		
+		var intViewTime = PlacesCleaner.getintViewTime();			// Delete viewer time less than...
+		var intDayInterval = PlacesCleaner.getintDayInterval();		// Checking every ... days
+		var charLastVacuumTime = PlacesCleaner.getLastVacuumTime();	// Last vacuum time in BSD time
+		var intVacuumInterval = Date.now() - charLastVacuumTime - (intDayInterval * 1000 * 60 * 60 * 24)	// How many sec passed after day interval		
 
 		// Check and hide statusbar icon		
 		if (booAutoClean == true){
-				document.getElementById("PlacesCleaner-panel").hidden = true;
-		} else if (booHideStatus == true){
-			if (intVacuumInterval <0 )
-				document.getElementById("PlacesCleaner-panel").hidden = true;
-		}
-
-		// Autoclean
-		if (booAutoClean == true){
-			if (intVacuumInterval >= 0) {
+			document.getElementById("PlacesCleaner-panel").hidden = true;	// Always hide when auto clean mode
+			if (intVacuumInterval >= 0) {		// If last vacuum older than intDayInterval, vacuum it
 				var console = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
         		console.logStringMessage("Auto Clean");
 				PlacesCleaner.cleanIt();
 			}
+		} else if (booHideStatus == true){	
+			// Hide if not pass day interval since lase vacuum
+			if (intVacuumInterval <0 )	document.getElementById("PlacesCleaner-panel").hidden = true;
 		}
-
 	},
-	
-	onUnload: function(){
-	},
-	
 	
 	openOptions: function(){		
-		/* instantApply needs dialog = no */
-		/* Copied from chrome://mozapps/content/extensions/extensions.js in Firefox */
+		/* 
+		 * instantApply needs dialog = no
+		 * Copied from chrome://mozapps/content/extensions/extensions.js in Firefox
+		 * Codes from littlebtc
+		 */
 		var features;
 		var instant_apply = true;
 		try {
@@ -47,13 +42,11 @@ var PlacesCleaner = {
 		}
 		pref_window = window.openDialog('chrome://PlacesCleaner/content/prefs.xul', '', features);
 		pref_window.focus();
-
 	},
 	
 	onClickStatusIcon: function() {
 		PlacesCleaner.cleanIt();
 	},	
-	
 	
 	cleanIt: function(){
 		
@@ -61,7 +54,7 @@ var PlacesCleaner = {
 		var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
 		
 		// Init nsIAlertsService and click listener nsIObserver
-		// Listener to handle click on the end clean alert message
+		// Listener to handle click on the end-clean alert message
 		var listener = {
 			observe: function(subject, topic, data) {
 				if (topic == "alertclickcallback")
@@ -171,16 +164,14 @@ var PlacesCleaner = {
 		// Mac can handle multi line alert message
 		// alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", longtext, true, longtext, listener);
 		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, true, detailtext, listener);
-		
-		
+				
 		// Save last clean time			
 		var LastVacuumDay = Date.now();
-		var pref = Components.classes['@mozilla.org/preferences-service;1']  
-			.getService(Components.interfaces.nsIPrefBranch);  
+		var pref = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);  
 		pref.setCharPref('extensions.PlacesCleaner.lastvacuumtime', LastVacuumDay);
 		
 		// If set manual and hide statusbar icon, hide it
-		if (booHideStatus == true)
+		if (booHideStatus == true) 
 			document.getElementById("PlacesCleaner-panel").hidden = true;
 	},
 	
@@ -233,6 +224,18 @@ var PlacesCleaner = {
          .getCharPref("lastvacuumtime");
 	},
 	
+	checkVerNewerThan36: function() {
+		// Check firefox version if it's greater than 3.6
+		var versionChecker = Components.classes["@mozilla.org/xpcom/version-comparator;1"].getService(Components.interfaces.nsIVersionComparator);
+		if (versionChecker.compare(Application.version, "3.6") >= 0) {
+			  // code for >= 3.6
+			return true;
+		}
+		else {
+ 			 // code for <  3.0b4			
+			 return false;			 
+		}
+	},
 	
 	// String EOL platform dependent
 	// http://forums.mozillazine.org/viewtopic.php?f=19&t=572038
@@ -272,9 +275,6 @@ var PlacesCleaner = {
 	},
 
 };
-
-
-
 
 window.addEventListener("load", PlacesCleaner.onLoad, false);
 window.addEventListener("unload", PlacesCleaner.onUnload, false);
