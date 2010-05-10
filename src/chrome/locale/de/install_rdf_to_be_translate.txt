@@ -1,0 +1,9 @@
+	<em:localized>
+	<Description>
+		<em:locale>de-DE</em:locale>
+		<em:name>PlacesCleaner</em:name>
+		<em:description>Eine Erweiterung zum Bereinigen und Aufräumen der Places-Datenbank von Firefox.</em:description>
+		<em:contributor>Alle Mitwirkenden werden in der Datei license.txt aufgelistet.</em:contributor>
+		<em:translator>lcw, erglo (de-DE)</em:translator>		
+	</Description>
+	</em:localized>
