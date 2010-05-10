@@ -3,7 +3,6 @@
 		<em:locale>es-ES</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Complemento para limpiar la base de datos de Firefox de sitios.</em:description>
-		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>All contributors are listed in license.txt</em:contributor>
 		<em:translator>Roberto Cervero (es-ES)</em:translator>		
 	</Description>

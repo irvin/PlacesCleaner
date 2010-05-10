@@ -3,7 +3,6 @@
 		<em:locale>pl-PL</em:locale>
 		<em:name>PlacesCleaner</em:name>
 		<em:description>Rozszerzenie do defragmentacji i czyszcznia bazy odwiedzonych miejsc.</em:description>
-		<em:creator>Irvin Chen</em:creator>
 		<em:contributor>All contributors are listed in license.txt</em:contributor>
 		<em:translator>Leszek(teo)Życzkowski (pl-PL)</em:translator>		
 	</Description>

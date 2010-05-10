@@ -35,9 +35,9 @@ The following license applies to all files:
  * 
  * Translator(s): 
  * *
- * * erglo 		(de-DE)
- * * lcw 		(de-DE)
- * * Fux 		(de-DE)
+ * * erglo 		(de)
+ * * lcw 		(de)
+ * * Fux 		(de)
  * * Roberto Cervero (es-ES)
  * * myahoo 	(fr)
  * * renegade06 (mk-MK)
