@@ -1,0 +1,15 @@
+<!ENTITY panel.cleannow "Plaatsen nu opschonen!">
+<!ENTITY panel.preference "Voorkeuren…">
+<!ENTITY pref.title "PlacesCleaner voorkeuren">
+<!ENTITY pref.automaticclean "Automatisch opschonen">
+<!ENTITY pref.manualclean "Handmatig opschonen">
+<!ENTITY pref.every "Elke">
+<!ENTITY pref.days "dagen">
+<!ENTITY pref.hidestatus "Statusbalkpictogram verbergen">
+<!ENTITY pref.for "Gedurende">
+<!ENTITY pref.daysafter "dagen na opschonen">
+<!ENTITY pref.needrestart "* Vereist een herstart van Firefox">
+<!ENTITY pref.onlyvacuum "Alleen stofzuigen, nutteloze Geschiedenisonderdelen niet opschonen">
+<!ENTITY pref.viewlessthan "Plaatsen wissen die">
+<!ENTITY pref.times "maal of minder zijn bekeken">
+<!ENTITY pref.backupfile "Back-up maken van plaatsdatabase voor opschonen">

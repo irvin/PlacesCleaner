@@ -1,15 +1,15 @@
 <!ENTITY panel.cleannow "Очисти места!">
 <!ENTITY panel.preference "Подешавања...">
-<!ENTITY pref.title "Подешавање ЧистачаМеста">
+<!ENTITY pref.title "Подешавање Чистача места">
 <!ENTITY pref.automaticclean "Аутоматско чишћење">
 <!ENTITY pref.manualclean "Ручно чишћење">
 <!ENTITY pref.every "сваких">
 <!ENTITY pref.days "дана">
-<!ENTITY pref.hidestatus "Сакриј икону на статусној траци">
+<!ENTITY pref.hidestatus "Сакриј икону са статусне траке">
 <!ENTITY pref.for "за">
 <!ENTITY pref.daysafter "дана након чишћења">
-<!ENTITY pref.needrestart "* Потребно је да се Фајерфокс поново покрене">
+<!ENTITY pref.needrestart "* Потребно је поновно покретање Фајерфокса">
 <!ENTITY pref.onlyvacuum "Само сажми, не чисти бескористан историјат">
 <!ENTITY pref.viewlessthan "избриши погледане уносе">
 <!ENTITY pref.times "пута или мање">
-<!ENTITY pref.backupfile "Направи резервну копију датотеке базе података пре чишћења">
+<!ENTITY pref.backupfile "Направи резервну копију базе података пре чишћења">
