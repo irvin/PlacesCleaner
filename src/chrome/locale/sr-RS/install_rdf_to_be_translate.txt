@@ -1,9 +1,0 @@
-	<em:localized>
-	<Description>
-		<em:locale>sr</em:locale>
-		<em:name>PlacesCleaner</em:name>
-		<em:description>Чишћење и сажимање базе ваших места у Фајерфоксу.</em:description>
-		<em:contributor>Списак свих помоћника се налази у датотеци licsrse.txt</em:contributor>
-		<em:translator>Република Српска</em:translator>		
-	</Description>
-	</em:localized>

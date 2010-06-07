@@ -1,7 +1,6 @@
 	<em:localized>
 	<Description>
 		<em:locale>zh-CN</em:locale>
-		<em:name>PlacesCleaner</em:name>
 		<em:description>清理Places数据库加快firefox</em:description>
 		<em:contributor>所有贡献者已列于license.txt</em:contributor>
 		<em:translator>xmoke (zh-CN)</em:translator>		

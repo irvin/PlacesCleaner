@@ -1,7 +1,6 @@
 	<em:localized>
 	<Description>
 		<em:locale>fr</em:locale>
-		<em:name>PlacesCleaner</em:name>
 		<em:description>Une extension pour nettoyer et défragmenter la base de données des marque-pages de Firefox.</em:description>
 		<em:contributor>La liste des contributeurs est disponible dans license.txt</em:contributor>
 		<em:translator>myahoo (fr)</em:translator>		

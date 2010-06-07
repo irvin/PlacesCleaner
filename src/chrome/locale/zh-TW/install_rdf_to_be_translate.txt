@@ -1,7 +1,6 @@
 	<em:localized>
 	<Description>
 		<em:locale>en-US</em:locale>
-		<em:name>PlacesCleaner</em:name>
 		<em:description>Extension to clean and vacuum your firefox places database.</em:description>
 		<em:contributor>All contributors are listed in license.txt</em:contributor>
 		<em:translator>PLEASE ADD YOUR NAME HERE (en-US)</em:translator>		

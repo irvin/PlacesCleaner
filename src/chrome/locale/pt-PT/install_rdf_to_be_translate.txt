@@ -1,7 +1,6 @@
 	<em:localized>
 	<Description>
 		<em:locale>pt-PT</em:locale>
-		<em:name>PlacesCleaner</em:name>
 		<em:description>Extensão para limpar a base de dados places do firefox.</em:description>
 		<em:contributor>Todos os que contribuem estão indicados em license.txt</em:contributor>
 		<em:translator>Carlos Simão (pt-PT)</em:translator>		

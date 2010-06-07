@@ -1,7 +1,6 @@
 	<em:localized>
 	<Description>
 		<em:locale>nl</em:locale>
-		<em:name>PlacesCleaner</em:name>
 		<em:description>Extensie om uw Firefox-plaatsdatabase op te schonen en te stofzuigen.</em:description>
 		<em:contributor>Alle medewerkers staan opgesomd in license.txt</em:contributor>
 		<em:translator>markh van BabelZilla.org (nl)</em:translator>		
