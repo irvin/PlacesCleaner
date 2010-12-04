@@ -136,7 +136,7 @@ var PrefWindow = {
 		if (element.hasAttribute("checked")==true){
 			if (booVerNewThan36){
 				var strGetRes = document.getElementById("strRes");
-				var text = strGetRes.getString("OnlyVacuumOver36");
+				var text = strGetRes.getString("VacuumOver36");
 				prompts.alert(null, "PlacesCleaner", text);
 			} 
 			element2.setAttribute("disabled", "true");
