@@ -50,7 +50,7 @@
     </radiogroup>		
 
 	<checkbox id="chk-vacuum" label="&pref.onlyvacuum;" preference="PlacesCleaner-onlyvacuum-pref"  oncommand="PrefWindow.setOnlyVacuum();"/>    
-	<groupbox>
+	<groupbox id="advance-clean-settings">
 		<hbox align="center">
 			<label id="lblOnlyVacuum1" value="&pref.viewlessthan;" />
 			<textbox id="lblOnlyVacuum2" width="30" preference="PlacesCleaner-viewtime-pref" />
@@ -58,7 +58,7 @@
 		</hbox>
 		<hbox align="center">
 			<label id="lblPreserveDay1" value="&pref.preservelessthan;" />
-			<menulist preference="PlacesCleaner-preserveday-pref">
+			<menulist id="lblPreserveDay2" preference="PlacesCleaner-preserveday-pref">
 			<menupopup>
 				<menuitem label="&pref.3day;" value="3" />
 				<menuitem label="&pref.1week;" value="7" />

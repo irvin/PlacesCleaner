@@ -129,6 +129,9 @@ var PrefWindow = {
 		var element2 = document.getElementById("lblOnlyVacuum2");
 		var element3 = document.getElementById("lblOnlyVacuum1");
 		var element4 = document.getElementById("lblOnlyVacuum3");
+		var element5 = document.getElementById("lblPreserveDay1");
+		var element6 = document.getElementById("lblPreserveDay2");
+		var element7 = document.getElementById("lblPreserveDay3");
 		
 		if (element.hasAttribute("checked")==true){
 			if (booVerNewThan36){
@@ -139,10 +142,16 @@ var PrefWindow = {
 			element2.setAttribute("disabled", "true");
 			element3.setAttribute("disabled", "true");
 			element4.setAttribute("disabled", "true");
+			element5.setAttribute("disabled", "true");
+			element6.setAttribute("disabled", "true");
+			element7.setAttribute("disabled", "true");
 		} else {
 			element2.removeAttribute("disabled");
 			element3.removeAttribute("disabled");
 			element4.removeAttribute("disabled");
+			element5.removeAttribute("disabled");
+			element6.removeAttribute("disabled");
+			element7.removeAttribute("disabled");
 		}		
 		
     },
