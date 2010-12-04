@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "清除瀏覽次數少於">
 <!ENTITY pref.times "次的歷史紀錄">
 <!ENTITY pref.backupfile "清理前備份收藏庫檔案">
+<!ENTITY pref.preservelessthan "不清除最近">
+<!ENTITY pref.daysrecode "的瀏覽紀錄">
+<!ENTITY pref.3day "三日">
+<!ENTITY pref.1week "一週">
+<!ENTITY pref.2week "兩週">
+<!ENTITY pref.1month "一個月">
+<!ENTITY pref.2month "兩個月">
+<!ENTITY pref.6month "半年">

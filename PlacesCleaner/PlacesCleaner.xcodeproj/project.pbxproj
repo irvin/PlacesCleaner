@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		AAD3024912AA8DE400E600C8 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		AAD3024C12AA8DE400E600C8 /* edit-clear-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-clear-32.png"; sourceTree = "<group>"; };
+		AAD3024D12AA8DE400E600C8 /* edit-clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-clear.png"; sourceTree = "<group>"; };
+		AAD3024E12AA8DE400E600C8 /* panel.xul */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = panel.xul; sourceTree = "<group>"; };
+		AAD3024F12AA8DE400E600C8 /* prefs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prefs.js; sourceTree = "<group>"; };
+		AAD3025012AA8DE400E600C8 /* prefs.xul */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = prefs.xul; sourceTree = "<group>"; };
+		AAD3025112AA8DE400E600C8 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		AAD3025412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3025512AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3025612AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3025812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3025912AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3025A12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3025C12AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3025D12AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3025E12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3026012AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3026112AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3026212AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3026412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3026512AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3026612AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3026812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3026912AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3026A12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3026C12AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3026D12AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3026E12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3027012AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3027112AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3027212AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3027412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3027512AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3027612AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3027812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3027912AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3027A12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3027C12AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3027D12AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3027E12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3028012AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3028112AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3028212AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3028412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3028512AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3028612AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3028812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rdf_to_be_translate.txt; sourceTree = "<group>"; };
+		AAD3028912AA8DE400E600C8 /* PlacesCleaner.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlacesCleaner.dtd; sourceTree = "<group>"; };
+		AAD3028A12AA8DE400E600C8 /* PlacesCleaner.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlacesCleaner.properties; sourceTree = "<group>"; };
+		AAD3028B12AA8DE400E600C8 /* chrome.manifest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chrome.manifest; sourceTree = "<group>"; };
+		AAD3028E12AA8DE400E600C8 /* defaults.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = defaults.js; sourceTree = "<group>"; };
+		AAD3028F12AA8DE400E600C8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AAD3029012AA8DE400E600C8 /* install.rdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.rdf; sourceTree = "<group>"; };
+		AAD3029112AA8DE400E600C8 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		AAD3029212AA8DE400E600C8 /* target.xpi */ = {isa = PBXFileReference; lastKnownFileType = file; path = target.xpi; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		AAAC20CB12AA1BA300761AC3 = {
+			isa = PBXGroup;
+			children = (
+				AAD3024812AA8DE400E600C8 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD3024812AA8DE400E600C8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3024912AA8DE400E600C8 /* build.sh */,
+				AAD3024A12AA8DE400E600C8 /* chrome */,
+				AAD3028B12AA8DE400E600C8 /* chrome.manifest */,
+				AAD3028C12AA8DE400E600C8 /* defaults */,
+				AAD3028F12AA8DE400E600C8 /* icon.png */,
+				AAD3029012AA8DE400E600C8 /* install.rdf */,
+				AAD3029112AA8DE400E600C8 /* license.txt */,
+				AAD3029212AA8DE400E600C8 /* target.xpi */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		AAD3024A12AA8DE400E600C8 /* chrome */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3024B12AA8DE400E600C8 /* content */,
+				AAD3025212AA8DE400E600C8 /* locale */,
+			);
+			path = chrome;
+			sourceTree = "<group>";
+		};
+		AAD3024B12AA8DE400E600C8 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3024C12AA8DE400E600C8 /* edit-clear-32.png */,
+				AAD3024D12AA8DE400E600C8 /* edit-clear.png */,
+				AAD3024E12AA8DE400E600C8 /* panel.xul */,
+				AAD3024F12AA8DE400E600C8 /* prefs.js */,
+				AAD3025012AA8DE400E600C8 /* prefs.xul */,
+				AAD3025112AA8DE400E600C8 /* script.js */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+		AAD3025212AA8DE400E600C8 /* locale */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3025312AA8DE400E600C8 /* de */,
+				AAD3025712AA8DE400E600C8 /* en-US */,
+				AAD3025B12AA8DE400E600C8 /* es-ES */,
+				AAD3025F12AA8DE400E600C8 /* fr */,
+				AAD3026312AA8DE400E600C8 /* mk */,
+				AAD3026712AA8DE400E600C8 /* nl */,
+				AAD3026B12AA8DE400E600C8 /* pl */,
+				AAD3026F12AA8DE400E600C8 /* pt-BR */,
+				AAD3027312AA8DE400E600C8 /* pt-PT */,
+				AAD3027712AA8DE400E600C8 /* ru */,
+				AAD3027B12AA8DE400E600C8 /* sr */,
+				AAD3027F12AA8DE400E600C8 /* uk */,
+				AAD3028312AA8DE400E600C8 /* zh-CN */,
+				AAD3028712AA8DE400E600C8 /* zh-TW */,
+			);
+			path = locale;
+			sourceTree = "<group>";
+		};
+		AAD3025312AA8DE400E600C8 /* de */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3025412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3025512AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3025612AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = de;
+			sourceTree = "<group>";
+		};
+		AAD3025712AA8DE400E600C8 /* en-US */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3025812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3025912AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3025A12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = "en-US";
+			sourceTree = "<group>";
+		};
+		AAD3025B12AA8DE400E600C8 /* es-ES */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3025C12AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3025D12AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3025E12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = "es-ES";
+			sourceTree = "<group>";
+		};
+		AAD3025F12AA8DE400E600C8 /* fr */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3026012AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3026112AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3026212AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = fr;
+			sourceTree = "<group>";
+		};
+		AAD3026312AA8DE400E600C8 /* mk */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3026412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3026512AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3026612AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = mk;
+			sourceTree = "<group>";
+		};
+		AAD3026712AA8DE400E600C8 /* nl */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3026812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3026912AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3026A12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = nl;
+			sourceTree = "<group>";
+		};
+		AAD3026B12AA8DE400E600C8 /* pl */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3026C12AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3026D12AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3026E12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = pl;
+			sourceTree = "<group>";
+		};
+		AAD3026F12AA8DE400E600C8 /* pt-BR */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3027012AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3027112AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3027212AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = "pt-BR";
+			sourceTree = "<group>";
+		};
+		AAD3027312AA8DE400E600C8 /* pt-PT */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3027412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3027512AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3027612AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = "pt-PT";
+			sourceTree = "<group>";
+		};
+		AAD3027712AA8DE400E600C8 /* ru */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3027812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3027912AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3027A12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = ru;
+			sourceTree = "<group>";
+		};
+		AAD3027B12AA8DE400E600C8 /* sr */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3027C12AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3027D12AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3027E12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = sr;
+			sourceTree = "<group>";
+		};
+		AAD3027F12AA8DE400E600C8 /* uk */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3028012AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3028112AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3028212AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = uk;
+			sourceTree = "<group>";
+		};
+		AAD3028312AA8DE400E600C8 /* zh-CN */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3028412AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3028512AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3028612AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = "zh-CN";
+			sourceTree = "<group>";
+		};
+		AAD3028712AA8DE400E600C8 /* zh-TW */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3028812AA8DE400E600C8 /* install_rdf_to_be_translate.txt */,
+				AAD3028912AA8DE400E600C8 /* PlacesCleaner.dtd */,
+				AAD3028A12AA8DE400E600C8 /* PlacesCleaner.properties */,
+			);
+			path = "zh-TW";
+			sourceTree = "<group>";
+		};
+		AAD3028C12AA8DE400E600C8 /* defaults */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3028D12AA8DE400E600C8 /* preferences */,
+			);
+			path = defaults;
+			sourceTree = "<group>";
+		};
+		AAD3028D12AA8DE400E600C8 /* preferences */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3028E12AA8DE400E600C8 /* defaults.js */,
+			);
+			path = preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		AAAC20CD12AA1BA300761AC3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AAAC20D012AA1BA300761AC3 /* Build configuration list for PBXProject "PlacesCleaner" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = AAAC20CB12AA1BA300761AC3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		AAAC20CE12AA1BA300761AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		AAAC20CF12AA1BA300761AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAAC20D012AA1BA300761AC3 /* Build configuration list for PBXProject "PlacesCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAC20CE12AA1BA300761AC3 /* Debug */,
+				AAAC20CF12AA1BA300761AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAAC20CD12AA1BA300761AC3 /* Project object */;
+}

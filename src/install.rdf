@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>PlacesCleaner@sto.tw</em:id>
-    <em:version>0.3.5.3</em:version>
+    <em:version>0.40b</em:version>
     <em:type>2</em:type>
     <em:optionsURL>chrome://PlacesCleaner/content/prefs.xul</em:optionsURL>
     <em:iconURL>chrome://PlacesCleaner/content/edit-clear-32.png</em:iconURL>
@@ -15,7 +15,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.5</em:minVersion>
-        <em:maxVersion>3.7a5pre</em:maxVersion>
+        <em:maxVersion>4.0b8pre</em:maxVersion>
       </Description>
     </em:targetApplication>   
        

@@ -16,6 +16,7 @@
 		<preference id="PlacesCleaner-hidestatus-pref" name="extensions.PlacesCleaner.hidestatus" type="bool" />
 		<preference id="PlacesCleaner-onlyvacuum-pref" name="extensions.PlacesCleaner.onlyvacuum" type="bool" />
 		<preference id="PlacesCleaner-backupfile-pref" name="extensions.PlacesCleaner.backupfile" type="bool" />
+		<preference id="PlacesCleaner-preserveday-pref" name="extensions.PlacesCleaner.preserveday" type="int" />
 		<!-- <preference id="PlacesCleaner-showfileinfo-pref" name="extensions.PlacesCleaner.showfileinfo" type="bool" /> -->
     </preferences>
     
@@ -55,6 +56,20 @@
 			<textbox id="lblOnlyVacuum2" width="30" preference="PlacesCleaner-viewtime-pref" />
 			<label id="lblOnlyVacuum3" value="&pref.times;" />
 		</hbox>
+		<hbox align="center">
+			<label id="lblPreserveDay1" value="&pref.preservelessthan;" />
+			<menulist preference="PlacesCleaner-preserveday-pref">
+			<menupopup>
+				<menuitem label="&pref.3day;" value="3" />
+				<menuitem label="&pref.1week;" value="7" />
+				<menuitem label="&pref.2week;" value="14" />
+				<menuitem label="&pref.1month;" value="30" />
+				<menuitem label="&pref.2month;" value="60" />
+				<menuitem label="&pref.6month;" value="180" />
+			</menupopup>
+			</menulist>
+			<label id="lblPreserveDay3" value="&pref.daysrecode;" />
+		</hbox>		
 		<separator class="thin"/>
 	</groupbox>
 	

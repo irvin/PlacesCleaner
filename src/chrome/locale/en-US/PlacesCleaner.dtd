@@ -13,3 +13,12 @@
 <!ENTITY pref.viewlessthan "delete entries viewed">
 <!ENTITY pref.times "times or less">
 <!ENTITY pref.backupfile "Backup places database file before cleaning">
+<!ENTITY pref.preservelessthan "Prevent records in recent">
+<!ENTITY pref.daysrecode "to be delete">
+<!ENTITY pref.3day "3 days">
+<!ENTITY pref.1week "1 week">
+<!ENTITY pref.2week "2 weeks">
+<!ENTITY pref.1month "1 month">
+<!ENTITY pref.2month "2 mths">
+<!ENTITY pref.6month "6 mths">
+

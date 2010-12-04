@@ -4,8 +4,9 @@ var PlacesCleaner = {
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
 		var booBackupFile = PlacesCleaner.checkBackupFile();
-		var intViewTime = PlacesCleaner.getintViewTime();			// Delete viewer time less than...
+		var intViewTime = PlacesCleaner.getintViewTime();			// Delete viewer time less than ...
 		var intDayInterval = PlacesCleaner.getintDayInterval();		// Checking every ... days
+		var intPreserveDay = PlacesCleaner.getintPreserveDay();	//Preserve records newer than setting day interval
 		var charLastVacuumTime = PlacesCleaner.getLastVacuumTime();	// Last vacuum time in BSD time
 		var intVacuumInterval = Date.now() - charLastVacuumTime - (intDayInterval * 1000 * 60 * 60 * 24)	// How many sec passed after day interval		
 
@@ -109,16 +110,26 @@ var PlacesCleaner = {
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var intViewTime = PlacesCleaner.getintViewTime();
+		var intPreserveDay = PlacesCleaner.getintPreserveDay();	//Preserve records newer than setting day interval
+		var intDayInterval = PlacesCleaner.getintDayInterval();	// Checking every ... days
+		var intPreservePRtime = (Date.now() - (intPreserveDay * 60 * 60 * 24 * 1000)) * 1000;	//If last_visit_date not older than intPreserveBSDtime, don't delete it
+		var intVacuumInterval = Date.now() - (intDayInterval * 1000 * 60 * 60 * 24);	// How many sec passed after day interval
+
 		intViewTime = intViewTime.toString();
 
 		// Begin clean	
 		
 		if (booOnlyVacuum == false){
-			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("DELETE FROM moz_historyvisits WHERE place_id IN (SELECT id FROM moz_places WHERE visit_count <=" + intViewTime + ");");
-			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("DELETE FROM moz_places WHERE (visit_count <= " + intViewTime + " AND hidden <> 1 AND id NOT IN (SELECT place_id FROM moz_annos UNION SELECT fk FROM moz_bookmarks));");
-			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("DELETE FROM moz_inputhistory WHERE place_id NOT IN (SELECT id FROM moz_places);");
-			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("DELETE FROM moz_favicons WHERE id NOT IN (SELECT favicon_id FROM moz_places);");
-			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("DELETE FROM moz_annos WHERE anno_attribute_id IN (SELECT id FROM moz_anno_attributes WHERE name = 'google-toolbar/thumbnail-score' OR name = 'google-toolbar/thumbnail');");
+			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection
+				.executeSimpleSQL("DELETE FROM moz_historyvisits WHERE place_id IN (SELECT id FROM moz_places WHERE (visit_count <=" + intViewTime + ") AND (last_visit_date < " + intPreservePRtime + "));");
+			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection
+				.executeSimpleSQL("DELETE FROM moz_places WHERE (visit_count <= " + intViewTime + " AND (last_visit_date < " + intPreservePRtime + ") AND hidden <> 1 AND id NOT IN (SELECT place_id FROM moz_annos UNION SELECT fk FROM moz_bookmarks));");
+			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection
+				.executeSimpleSQL("DELETE FROM moz_inputhistory WHERE place_id NOT IN (SELECT id FROM moz_places);");
+			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection
+				.executeSimpleSQL("DELETE FROM moz_favicons WHERE id NOT IN (SELECT favicon_id FROM moz_places);");
+			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection
+				.executeSimpleSQL("DELETE FROM moz_annos WHERE anno_attribute_id IN (SELECT id FROM moz_anno_attributes WHERE name = 'google-toolbar/thumbnail-score' OR name = 'google-toolbar/thumbnail');");
 		} else {
 			var console = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
         	console.logStringMessage("Only Vacuum!");
@@ -188,6 +199,13 @@ var PlacesCleaner = {
          .getIntPref("dayinterval");
 	},
 
+	getintPreserveDay: function() {
+		return Components.classes["@mozilla.org/preferences-service;1"]
+		.getService(Components.interfaces.nsIPrefService)
+		.getBranch("extensions.PlacesCleaner.")
+		.getIntPref("preserveday");
+	},	
+	
 	checkAutoClean: function() {
 	     return Components.classes["@mozilla.org/preferences-service;1"]
          .getService(Components.interfaces.nsIPrefService)
