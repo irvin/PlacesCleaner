@@ -1,8 +1,0 @@
-	<em:localized>
-	<Description>
-		<em:locale>pt-BR</em:locale>
-		<em:description>Extensão para limpar e otimizar seu banco de dados de locais do Firefox.</em:description>
-		<em:contributor>Todos os colaboradores estão listados no arquivo license.txt</em:contributor>
-		<em:translator>Marcelo Ghelman (pt-BR)</em:translator>		
-	</Description>
-	</em:localized>

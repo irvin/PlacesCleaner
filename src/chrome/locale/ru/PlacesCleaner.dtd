@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "Удалить записи просмотренные менее чем">
 <!ENTITY pref.times "раз(а)">
 <!ENTITY pref.backupfile "Перед очисткой сделать резервную копию базы данных «Собранное»">
+<!ENTITY pref.preservelessthan "Защитить недавние записи за">
+<!ENTITY pref.daysrecode "от удаления">
+<!ENTITY pref.3day "три дня">
+<!ENTITY pref.1week "одну неделю">
+<!ENTITY pref.2week "две недели">
+<!ENTITY pref.1month "один месяц">
+<!ENTITY pref.2month "два месяца">
+<!ENTITY pref.6month "6 месяцев">

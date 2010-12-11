@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "избриши погледане уносе">
 <!ENTITY pref.times "пута или мање">
 <!ENTITY pref.backupfile "Направи резервну копију базе података пре чишћења">
+<!ENTITY pref.preservelessthan "Спречи да уноси од пре">
+<!ENTITY pref.daysrecode "буду избрисани">
+<!ENTITY pref.3day "3 дана">
+<!ENTITY pref.1week "1 седмице">
+<!ENTITY pref.2week "2 седмице">
+<!ENTITY pref.1month "1 месеца">
+<!ENTITY pref.2month "2 месеца">
+<!ENTITY pref.6month "6 месеци">

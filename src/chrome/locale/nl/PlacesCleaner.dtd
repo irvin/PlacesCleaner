@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "Plaatsen wissen die">
 <!ENTITY pref.times "maal of minder zijn bekeken">
 <!ENTITY pref.backupfile "Back-up maken van plaatsdatabase voor opschonen">
+<!ENTITY pref.preservelessthan "Records voorkomen in de laatste">
+<!ENTITY pref.daysrecode "te verwijderen">
+<!ENTITY pref.3day "3 dagen">
+<!ENTITY pref.1week "1 week">
+<!ENTITY pref.2week "2 weken">
+<!ENTITY pref.1month "1 maand">
+<!ENTITY pref.2month "2 maanden">
+<!ENTITY pref.6month "6 maanden">

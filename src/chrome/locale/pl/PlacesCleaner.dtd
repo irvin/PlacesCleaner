@@ -12,4 +12,12 @@
 <!ENTITY pref.onlyvacuum "Tylko defragmentuj, nie usuwaj zbytecznych wpisów">
 <!ENTITY pref.viewlessthan "Usuwaj wpisy oglądane">
 <!ENTITY pref.times "lub mniej razy">
-<!ENTITY pref.backupfile "Twórz kopię bazy danych przed wyczyszczeniem">
+<!ENTITY pref.backupfile "Przed czyszczeniem twórz kopię bazy danych">
+<!ENTITY pref.preservelessthan "Zabezpiecz wpisy z">
+<!ENTITY pref.daysrecode "przed usunięciem">
+<!ENTITY pref.3day "ostatnich 3 dni">
+<!ENTITY pref.1week "ostatniego tygodnia">
+<!ENTITY pref.2week "ostatnich 2 tygodni">
+<!ENTITY pref.1month "ostatniego miesiąca">
+<!ENTITY pref.2month "ostatnich 2 miesięcy">
+<!ENTITY pref.6month "ostatnich 6 miesięcy">

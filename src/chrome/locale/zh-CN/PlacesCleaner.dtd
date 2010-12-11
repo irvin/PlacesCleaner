@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "删除浏览次数少于">
 <!ENTITY pref.times "次的条目">
 <!ENTITY pref.backupfile "清理前备份数据库">
+<!ENTITY pref.preservelessthan "不要删除">
+<!ENTITY pref.daysrecode "内的记录">
+<!ENTITY pref.3day "3天">
+<!ENTITY pref.1week "1星期">
+<!ENTITY pref.2week "2星期">
+<!ENTITY pref.1month "1个月">
+<!ENTITY pref.2month "2个月">
+<!ENTITY pref.6month "半年">

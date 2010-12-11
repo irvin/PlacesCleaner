@@ -1,8 +1,0 @@
-	<em:localized>
-	<Description>
-		<em:locale>uk-UA</em:locale>
-		<em:description>Розширення для чищення та стискання бази відвідувань firefox.</em:description>
-		<em:contributor>All contributors are listed in license.txt</em:contributor>
-		<em:translator>Zhouck Andriy (uk-UA)</em:translator>
-	</Description>
-	</em:localized>

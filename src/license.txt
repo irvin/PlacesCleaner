@@ -30,21 +30,21 @@ The following license applies to all files:
  * 
  * Translator(s): 
  * *
- * * erglo 		(de)
- * * lcw 		(de)
- * * Fux 		(de)
- * * Roberto Cervero 	(es-ES)
- * * myahoo 		(fr)
- * * renegade06 	(mk-MK)
- * * markh van BabelZilla.org (nl)
- * * Leszek(teo)Życzkowski (pl-PL)
- * * Marcelo Ghelman 	(pt-BR)
- * * lloco 		(pt-PT)
- * * Carlos Simão	(pt-PT)
- * * Пирятинский Виталий (ru-RU)
- * * Република Српска 	(sr)
- * * Zhouck Andriy	(uk-UA)
- * * xmoke 		(zh-CN)
+ * * erglo					(de)
+ * * lcw					(de)
+ * * Fux					(de)
+ * * Roberto Cervero		(es-ES)
+ * * myahoo					(fr)
+ * * renegade06				(mk-MK)
+ * * markh van BabelZilla.org	(nl)
+ * * Leszek(teo)Życzkowski	(pl-PL)
+ * * Marcelo Ghelman		(pt-BR)
+ * * lloco					(pt-PT)
+ * * Carlos Simão			(pt-PT)
+ * * Пирятинский Виталий	(ru-RU)
+ * * Република Српска		(sr)
+ * * Zhouck Andriy			(uk-UA)
+ * * xmoke					(zh-CN)
  * *
  *
  * ***** END LICENSE BLOCK ***** */

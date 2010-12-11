@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "Effacer les entrées consultées moins de">
 <!ENTITY pref.times "fois">
 <!ENTITY pref.backupfile "Sauvegarder le fichier de la base de données d'adresses avant de nettoyer">
+<!ENTITY pref.preservelessthan "Empêcher les enregistrements datant de">
+<!ENTITY pref.daysrecode "d'être supprimés">
+<!ENTITY pref.3day "3 jours">
+<!ENTITY pref.1week "1 semaine">
+<!ENTITY pref.2week "2 semaines">
+<!ENTITY pref.1month "1 mois">
+<!ENTITY pref.2month "2 mois">
+<!ENTITY pref.6month "6 mois">

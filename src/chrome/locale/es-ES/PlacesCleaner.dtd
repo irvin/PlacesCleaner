@@ -13,3 +13,11 @@
 <!ENTITY pref.viewlessthan "borrar entradas vistas">
 <!ENTITY pref.times "veces o menos">
 <!ENTITY pref.backupfile "Respaldar base de datos de sitios antes de limpiar">
+<!ENTITY pref.preservelessthan "Impedir registros en recientes.">
+<!ENTITY pref.daysrecode "para borrar">
+<!ENTITY pref.3day "3 días">
+<!ENTITY pref.1week "1 semana">
+<!ENTITY pref.2week "2 semanas">
+<!ENTITY pref.1month "1 mes">
+<!ENTITY pref.2month "2 meses">
+<!ENTITY pref.6month "6 meses">

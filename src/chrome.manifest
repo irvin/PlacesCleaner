@@ -1,16 +1,12 @@
 content     PlacesCleaner    chrome/content/
 overlay 	chrome://browser/content/browser.xul chrome://PlacesCleaner/content/panel.xul
-locale 		PlacesCleaner 	de		chrome/locale/de/
 locale 		PlacesCleaner 	en-US 	chrome/locale/en-US/
 locale 		PlacesCleaner 	es-ES 	chrome/locale/es-ES/
 locale 		PlacesCleaner 	fr 		chrome/locale/fr/
-locale 		PlacesCleaner 	mk		chrome/locale/mk/
 locale 		PlacesCleaner 	nl 		chrome/locale/nl/
 locale 		PlacesCleaner 	pl		chrome/locale/pl/
-locale 		PlacesCleaner 	pt-BR 	chrome/locale/pt-BR/
 locale 		PlacesCleaner 	pt-PT 	chrome/locale/pt-PT/
 locale 		PlacesCleaner 	ru		chrome/locale/ru/
 locale 		PlacesCleaner 	sr		chrome/locale/sr/
-locale 		PlacesCleaner 	uk		chrome/locale/uk/
 locale 		PlacesCleaner 	zh-CN 	chrome/locale/zh-CN/
 locale 		PlacesCleaner 	zh-TW 	chrome/locale/zh-TW/

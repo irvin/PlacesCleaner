@@ -1,8 +1,0 @@
-	<em:localized>
-	<Description>
-		<em:locale>mk-MK</em:locale>
-		<em:description>Екстензија за чистење на вашите firefox бази на податоци на посетени места.</em:description>
-		<em:contributor>Сите соработници се наведени во лиценцата.txt</em:contributor>
-		<em:translator>Renegade (mk-MK)</em:translator>		
-	</Description>
-	</em:localized>
