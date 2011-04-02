@@ -1,0 +1,23 @@
+<!ENTITY panel.cleannow "Vyčistit databázi!">
+<!ENTITY panel.preference "Nastavení...">
+<!ENTITY pref.title "PlacesCleaner Nastavení">
+<!ENTITY pref.automaticclean "Automatické čištění">
+<!ENTITY pref.manualclean "Manuální čištění">
+<!ENTITY pref.every "Každých">
+<!ENTITY pref.days "dní">
+<!ENTITY pref.hidestatus "Skrýt stavovou ikonu">
+<!ENTITY pref.for "For">
+<!ENTITY pref.daysafter "dní po čištění">
+<!ENTITY pref.needrestart "* Potřebuje restartovat firefox">
+<!ENTITY pref.onlyvacuum "Pouze databázi, nečistit položku historie">
+<!ENTITY pref.viewlessthan "smazat prohlížené záznamy">
+<!ENTITY pref.times "krát méně">
+<!ENTITY pref.backupfile "Zálohovat soubor místa databáze před čištěním">
+<!ENTITY pref.preservelessthan "Ochránit záznamy v posledních">
+<!ENTITY pref.daysrecode "před vymazáním">
+<!ENTITY pref.3day "3 dny">
+<!ENTITY pref.1week "1 týden">
+<!ENTITY pref.2week "2 týdny">
+<!ENTITY pref.1month "1 měsíc">
+<!ENTITY pref.2month "2 měsíce">
+<!ENTITY pref.6month "6 měsíců">

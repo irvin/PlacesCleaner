@@ -1,0 +1,23 @@
+<!ENTITY panel.cleannow "Places-Datenbank jetzt bereinigen!">
+<!ENTITY panel.preference "Einstellungen…">
+<!ENTITY pref.title "PlacesCleaner - Einstellungen">
+<!ENTITY pref.automaticclean "Automatisch bereinigen">
+<!ENTITY pref.manualclean "Manuell bereinigen">
+<!ENTITY pref.every "Alle">
+<!ENTITY pref.days "Tage">
+<!ENTITY pref.hidestatus "Statusleistensymbol ausblenden…">
+<!ENTITY pref.for "für">
+<!ENTITY pref.daysafter "Tage nach einer Bereinigung.">
+<!ENTITY pref.needrestart "* Erfordert einen Firefox-Neustart">
+<!ENTITY pref.onlyvacuum "Nur aufräumen, überflüssige Chronik-Einträge nicht bereinigen">
+<!ENTITY pref.viewlessthan "Nur Einträge löschen, die">
+<!ENTITY pref.times "mal oder seltener besucht wurden.">
+<!ENTITY pref.backupfile "Places-Datenbank vor der Bereinigung sichern">
+<!ENTITY pref.preservelessthan "Nur Einträge löschen, die älter als">
+<!ENTITY pref.daysrecode "sind.">
+<!ENTITY pref.3day "3 Tage">
+<!ENTITY pref.1week "1 Woche">
+<!ENTITY pref.2week "2 Wochen">
+<!ENTITY pref.1month "1 Monat">
+<!ENTITY pref.2month "2 Monate">
+<!ENTITY pref.6month "6 Monate">

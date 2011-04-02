@@ -1,0 +1,8 @@
+	<em:localized>
+	<Description>
+		<em:locale>cs-CZ</em:locale>
+		<em:description>Doplňek k čištění místa v databázi ve Firefoxu.</em:description>
+		<em:contributor>Všichni přispěvatelé jsou uvedeny v licence.txt.</em:contributor>
+		<em:translator>Sam (cs-CZ)</em:translator>		
+	</Description>
+	</em:localized>

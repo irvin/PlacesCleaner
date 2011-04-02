@@ -28,9 +28,10 @@ The following license applies to all files:
  * * 	http://bootleq.blogspot.com/2009/10/placescleaner-bookmarklet_14.html
  * *
  * 
- * Translator(s): 
- * *
- * * erglo					(de)
+ * Translator(s):
+ * * 
+ * * Sam					(cs-CZ)
+ * * erglo				(de)
  * * lcw					(de)
  * * Fux					(de)
  * * Roberto Cervero		(es-ES)
@@ -43,6 +44,7 @@ The following license applies to all files:
  * * Carlos Simão			(pt-PT)
  * * Пирятинский Виталий	(ru-RU)
  * * Република Српска		(sr)
+ * * Mikael Hiort af Ornäs (sv-SE)
  * * Zhouck Andriy			(uk-UA)
  * * xmoke					(zh-CN)
  * *
