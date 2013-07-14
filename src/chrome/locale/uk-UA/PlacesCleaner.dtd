@@ -1,0 +1,23 @@
+<!ENTITY panel.cleannow "Очистити місяця зараз!">
+<!ENTITY panel.preference "Налаштування...">
+<!ENTITY pref.title "Налаштування ЧистильникаМісць">
+<!ENTITY pref.automaticclean "Автоматичне чищення">
+<!ENTITY pref.manualclean "Ручне чищення">
+<!ENTITY pref.every "Кожні">
+<!ENTITY pref.days "днів">
+<!ENTITY pref.hidestatus "Приховати іконку рядка стану">
+<!ENTITY pref.for "Для">
+<!ENTITY pref.daysafter "днів після чищення">
+<!ENTITY pref.needrestart "* Потрібен перезапуск Firefox">
+<!ENTITY pref.onlyvacuum "Лише стискання, не очищувати записи історії, що не використовуються">
+<!ENTITY pref.viewlessthan "вилучати записи, що переглянуті">
+<!ENTITY pref.times "разів чи менше">
+<!ENTITY pref.backupfile "Копіювати базу відвідувань перед очисткою">
+<!ENTITY pref.preservelessthan "Залишати записи за останні">
+<!ENTITY pref.daysrecode "від вилучення">
+<!ENTITY pref.3day "3 дні">
+<!ENTITY pref.1week "1 тиждень">
+<!ENTITY pref.2week "2 тижні">
+<!ENTITY pref.1month "1 місяць">
+<!ENTITY pref.2month "2 місяці">
+<!ENTITY pref.6month "6 місяців">

@@ -1,0 +1,8 @@
+	<em:localized>
+	<Description>
+		<em:locale>sv-SE</em:locale>
+		<em:description>Tillägg som rensar och dammsuger din places-databas (Platser) för Firefox.</em:description>
+		<em:contributor>Alla medarbetare finns angivna i filen license.txt</em:contributor>
+		<em:translator>Mikael Hiort af Ornäs (sv-SE)</em:translator>		
+	</Description>
+	</em:localized>

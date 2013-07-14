@@ -1,0 +1,23 @@
+<!ENTITY panel.cleannow "Städa Platser nu!">
+<!ENTITY panel.preference "Inställningar...">
+<!ENTITY pref.title "Inställningar för PlacesCleaner">
+<!ENTITY pref.automaticclean "Automatisk städning">
+<!ENTITY pref.manualclean "Manuell städning">
+<!ENTITY pref.every "Var">
+<!ENTITY pref.days "dag">
+<!ENTITY pref.hidestatus "Göm statusfältikonen">
+<!ENTITY pref.for "Under">
+<!ENTITY pref.daysafter "dagar efter städning">
+<!ENTITY pref.needrestart "* Kräver omstart av Firefox">
+<!ENTITY pref.onlyvacuum "Dammsug bara, rensa inte oanvändbara historikposter">
+<!ENTITY pref.viewlessthan "Ta bort poster som visats">
+<!ENTITY pref.times "gånger eller mindre">
+<!ENTITY pref.backupfile "Säkerhetskopiera places-databasfilen innan städning">
+<!ENTITY pref.preservelessthan "Förhindra att poster yngre än">
+<!ENTITY pref.daysrecode "tas bort">
+<!ENTITY pref.3day "3 dagar">
+<!ENTITY pref.1week "1 vecka">
+<!ENTITY pref.2week "2 veckor">
+<!ENTITY pref.1month "1 månad">
+<!ENTITY pref.2month "2 månader">
+<!ENTITY pref.6month "6 månader">
