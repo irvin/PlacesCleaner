@@ -97,16 +97,8 @@ var PlacesCleaner = {
 				alert('Backup places database error!'+ PlacesCleaner.getEol() +e);
 				return;
 			}
-		}		
+		}	
 
-		
-		// Display begin clean message
-		
-		var strGetRes = document.getElementById("strRes");
-		var text = strGetRes.getString("BeginClean");
-		
-		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
-		
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var intViewTime = PlacesCleaner.getintViewTime();
@@ -139,6 +131,7 @@ var PlacesCleaner = {
 
 		
 		// Display end clean message
+		var strGetRes = document.getElementById("strRes");
 		var text = strGetRes.getString("EndClean");
 		var detailtext = "";
 		
