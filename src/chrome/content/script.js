@@ -1,3 +1,5 @@
+let console = Cu.import("resource://gre/modules/devtools/Console.jsm").console;
+
 var PlacesCleaner = {
 	onLoad: function(){
 		var booAutoClean = PlacesCleaner.checkAutoClean();
@@ -14,9 +16,8 @@ var PlacesCleaner = {
 		if (booAutoClean == true){
 			document.getElementById("PlacesCleaner-panel").hidden = true;	// Always hide when auto clean mode
 			if (intVacuumInterval >= 0) {		// If last vacuum older than intDayInterval, vacuum it
-				var console = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
-        		console.logStringMessage("Auto Clean");
-				PlacesCleaner.cleanIt();
+                console.log("Auto Clean");
+                PlacesCleaner.cleanIt();
 			}
 		} else if (booHideStatus == true){	
 			// Hide if not pass day interval since lase vacuum
@@ -105,8 +106,14 @@ var PlacesCleaner = {
 		var strGetRes = document.getElementById("strRes");
 		var text = strGetRes.getString("BeginClean");
 		
-		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
-		
+	    if (!PlacesCleaner.checkVerFx22NotiBug()){
+	        try {
+		        alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, false);
+            } catch (e) {
+              // This can fail on Mac OS X without growl and notification center
+            }
+        }	
+        
 		var booOnlyVacuum = PlacesCleaner.checkOnlyVacuum();
 		var booHideStatus = PlacesCleaner.checkHideStatus();
 		var intViewTime = PlacesCleaner.getintViewTime();
@@ -131,8 +138,7 @@ var PlacesCleaner = {
 			Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection
 				.executeSimpleSQL("DELETE FROM moz_annos WHERE anno_attribute_id IN (SELECT id FROM moz_anno_attributes WHERE name = 'google-toolbar/thumbnail-score' OR name = 'google-toolbar/thumbnail');");
 		} else {
-			var console = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
-        	console.logStringMessage("Only Vacuum!");
+            	console.log("Only Vacuum!");
 		}
 		
         Components.classes["@mozilla.org/browser/nav-history-service;1"].getService(Components.interfaces.nsPIPlacesDatabase).DBConnection.executeSimpleSQL("VACUUM");
@@ -173,7 +179,11 @@ var PlacesCleaner = {
 		// if (PlacesCleaner.getPlatform() == 'mac'){
 		// Mac can handle multi line alert message
 		// alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", longtext, true, longtext, listener);
-		alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, true, detailtext, listener);
+		try {
+		    alertsService.showAlertNotification("chrome://PlacesCleaner/content/edit-clear-32.png",  "PlacesCleaner", text, true, detailtext, listener);
+		} catch (e) {
+		}
+		
 				
 		// Save last clean time			
 		var LastVacuumDay = Date.now();
@@ -277,8 +287,22 @@ var PlacesCleaner = {
 	    }
 	    */
 	},
+	
+	checkVerFx22NotiBug: function() {
+		// Notification in Fx > 22 will broke if show multiple messages
+		var versionChecker = Components.classes["@mozilla.org/xpcom/version-comparator;1"].getService(Components.interfaces.nsIVersionComparator);
+		
+		// It seems that working in Mac
+//        var p = navigator.platform.toLowerCase(); // platform
+//        if(p.indexOf('mac') != -1) return false; // mac
+
+		if (versionChecker.compare(Application.version, "22.0") >= 0)
+			return true;
+		else
+		    return false;
+	}
 
 };
 
 window.addEventListener("load", PlacesCleaner.onLoad, false);
-window.addEventListener("unload", PlacesCleaner.onUnload, false);
+//window.addEventListener("unload", PlacesCleaner.onUnload, false);
