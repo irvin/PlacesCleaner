@@ -158,7 +158,7 @@ var PlacesCleaner = {
         var text2 = strGetRes.getString("FileRecordsAfter");
         var text3 = strGetRes.getString("FileRecordsReduce");
         var text4 = strGetRes.getString("FileRecordsName");
-        detailtext = detailtext + 'n' + text2 + ' ' + originalRecords + ' → ' + afterRecords + ' ' + text4 + text3 + ' ' + recordsnum + ' ' + text4;
+        detailtext = detailtext + '\n' + text2 + ' ' + originalRecords + ' → ' + afterRecords + ' ' + text4 + text3 + ' ' + recordsnum + ' ' + text4;
 
         // if (PlacesCleaner.getPlatform() == 'mac'){
         // Mac can handle multi line alert message
